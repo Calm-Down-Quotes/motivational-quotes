@@ -1,11 +1,32 @@
 "use strict";
 
 /* ========================================================
-   CONSTANTS
+   PAGE CONTEXT (CALM vs MOTIVATION)
 ======================================================== */
 const SITE_URL = "https://calm-down-quotes.github.io/";
-const PREVIEW_IMAGE_URL = `${SITE_URL}preview.png`;
-const STORAGE_KEY = "calm_down_quotes_state_v3";
+
+let pageSlug = "calm";
+if (typeof window !== "undefined") {
+  const path = (window.location.pathname || "").toLowerCase();
+  if (path.includes("motivation")) {
+    pageSlug = "motivation";
+  }
+}
+
+const BRAND_NAME =
+  pageSlug === "motivation" ? "Motivational Quotes" : "Calm Down Quotes";
+const SHORT_TITLE =
+  pageSlug === "motivation" ? "Motivational Quote" : "Calm Down Quote";
+
+const QUOTES_PATH =
+  pageSlug === "motivation" ? "quotes-motivation.json" : "quotes.json";
+
+const PREVIEW_IMAGE_URL =
+  pageSlug === "motivation"
+    ? `${SITE_URL}preview-motivation.png`
+    : `${SITE_URL}preview.png`;
+
+const STORAGE_KEY = `calm_down_quotes_state_${pageSlug}_v3`;
 const TRANSITION_DURATION_MS = 350; // matches CSS transition
 
 const PREFERS_REDUCED_MOTION =
@@ -122,11 +143,11 @@ function initialiseOrder() {
 }
 
 /**
- * Fetches quotes from quotes.json and initialises the app state.
+ * Fetches quotes from the correct JSON file and initialises the app state.
  */
 async function loadQuotes() {
   try {
-    const res = await fetch("quotes.json", { cache: "no-cache" });
+    const res = await fetch(QUOTES_PATH, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const data = await res.json();
@@ -139,7 +160,10 @@ async function loadQuotes() {
 
     initialiseOrder();
 
-    trackEvent("quotes_loaded", { total_quotes: quotes.length });
+    trackEvent("quotes_loaded", {
+      total_quotes: quotes.length,
+      pageSlug
+    });
 
     if (quotes.length > 0 && quoteBtn) {
       generateQuote();
@@ -147,7 +171,8 @@ async function loadQuotes() {
   } catch (err) {
     console.error("Error loading quotes:", err);
     trackEvent("quotes_load_error", {
-      message: err && err.message ? String(err.message) : String(err)
+      message: err && err.message ? String(err.message) : String(err),
+      pageSlug
     });
 
     if (!quoteBox) return;
@@ -209,7 +234,10 @@ function generateQuote() {
   saveState();
 
   if (quoteBtn) {
-    quoteBtn.textContent = "Give Me Another Quote";
+    quoteBtn.textContent =
+      pageSlug === "motivation"
+        ? "Give Me Another Motivational Quote"
+        : "Give Me Another Quote";
   }
 
   const updateContent = () => {
@@ -245,7 +273,8 @@ function generateQuote() {
 
   trackEvent("quote_generated", {
     index: currentIndex - 1,
-    total_quotes: quotes.length
+    total_quotes: quotes.length,
+    pageSlug
   });
 }
 
@@ -270,7 +299,7 @@ document.addEventListener("keydown", (event) => {
     event.key === "ArrowRight"
   ) {
     event.preventDefault();
-    trackEvent("quote_keyboard_shortcut", { key: event.key });
+    trackEvent("quote_keyboard_shortcut", { key: event.key, pageSlug });
     generateQuote();
   }
 });
@@ -302,8 +331,8 @@ function buildShareText() {
           .join(", ")
       : "",
     "",
-    "Shared from Calm Down Quotes",
-    SITE_URL
+    `Shared from ${BRAND_NAME}`,
+    pageSlug === "motivation" ? `${SITE_URL}motivation.html` : SITE_URL
   ].filter(Boolean);
 
   return parts.join("\n");
@@ -331,7 +360,7 @@ copyBtn?.addEventListener("click", async () => {
     }
 
     await navigator.clipboard.writeText(text);
-    trackEvent("quote_copied");
+    trackEvent("quote_copied", { pageSlug });
     if (copyFeedback) {
       copyFeedback.textContent = "Copied.";
       copyFeedback.classList.add("visible");
@@ -349,7 +378,7 @@ whatsappBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_whatsapp");
+  trackEvent("share_whatsapp", { pageSlug });
 
   window.open(
     `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`,
@@ -362,7 +391,7 @@ smsBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_sms");
+  trackEvent("share_sms", { pageSlug });
 
   window.location.href = `sms:?body=${encodeURIComponent(text)}`;
 });
@@ -372,7 +401,7 @@ messengerBtn?.addEventListener("click", () => {
   if (!text) return;
 
   const appId = "123"; // replace with a real Facebook App ID if you ever use this
-  trackEvent("share_messenger");
+  trackEvent("share_messenger", { pageSlug });
 
   window.open(
     `https://www.facebook.com/dialog/send?app_id=${encodeURIComponent(
@@ -387,11 +416,11 @@ pinterestBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_pinterest");
+  trackEvent("share_pinterest", { pageSlug });
 
   window.open(
     `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(
-      SITE_URL
+      pageSlug === "motivation" ? `${SITE_URL}motivation.html` : SITE_URL
     )}&media=${encodeURIComponent(
       PREVIEW_IMAGE_URL
     )}&description=${encodeURIComponent(text)}`,
@@ -404,7 +433,7 @@ instagramBtn?.addEventListener("click", async () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_instagram");
+  trackEvent("share_instagram", { pageSlug });
 
   alert(
     "The full quote has been copied. Open Instagram, create a Story or Post, and paste the text."
@@ -421,17 +450,16 @@ instagramBtn?.addEventListener("click", async () => {
 
 shareBtn?.addEventListener("click", async () => {
   const text = buildShareText();
-  const shortTitle = "Calm Down Quote";
   if (!text) return;
 
   if (navigator.share) {
     try {
       await navigator.share({
-        title: shortTitle,
+        title: SHORT_TITLE,
         text: text.substring(0, 250),
-        url: SITE_URL
+        url: pageSlug === "motivation" ? `${SITE_URL}motivation.html` : SITE_URL
       });
-      trackEvent("share_native");
+      trackEvent("share_native", { pageSlug });
     } catch (e) {
       if (e.name !== "AbortError") {
         console.error("Error sharing:", e);
@@ -444,7 +472,7 @@ shareBtn?.addEventListener("click", async () => {
         return;
       }
       await navigator.clipboard.writeText(text);
-      trackEvent("share_fallback_copy");
+      trackEvent("share_fallback_copy", { pageSlug });
       if (copyFeedback) {
         copyFeedback.textContent = "Share text copied.";
         copyFeedback.classList.add("visible");
@@ -462,7 +490,10 @@ shareBtn?.addEventListener("click", async () => {
    SUBSCRIBE CLICK TRACKING
 ======================================================== */
 subscribeBtn?.addEventListener("click", () => {
-  trackEvent("subscribe_click", { location: "home_subscribe_section" });
+  trackEvent("subscribe_click", {
+    location: "home_subscribe_section",
+    pageSlug
+  });
 });
 
 /* ========================================================
@@ -493,7 +524,7 @@ document.addEventListener(
 
     // Only trigger on a clear horizontal swipe
     if (Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY)) {
-      trackEvent("quote_swiped");
+      trackEvent("quote_swiped", { pageSlug });
       generateQuote();
     }
   },
