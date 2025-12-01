@@ -1,33 +1,29 @@
 "use strict";
 
 /* ========================================================
-   PAGE CONTEXT (CALM vs MOTIVATION)
+   PAGE + CONSTANTS
 ======================================================== */
 const SITE_URL = "https://calm-down-quotes.github.io/";
 
-let pageSlug = "calm";
-if (typeof window !== "undefined") {
-  const path = (window.location.pathname || "").toLowerCase();
-  if (path.includes("motivation")) {
-    pageSlug = "motivation";
-  }
-}
+// Detect which page we are on by the URL
+const PATH = (typeof window !== "undefined" && window.location && window.location.pathname)
+  ? window.location.pathname.toLowerCase()
+  : "";
 
-const BRAND_NAME =
-  pageSlug === "motivation" ? "Motivational Quotes" : "Calm Down Quotes";
-const SHORT_TITLE =
-  pageSlug === "motivation" ? "Motivational Quote" : "Calm Down Quote";
+const IS_MOTIVATION = PATH.includes("motivation");
 
-const QUOTES_PATH =
-  pageSlug === "motivation" ? "quotes-motivation.json" : "quotes.json";
+// Per-page settings
+const PAGE_ID            = IS_MOTIVATION ? "motivation" : "calm";
+const STORAGE_KEY        = IS_MOTIVATION ? "motivation_quotes_state_v1" : "calm_down_quotes_state_v3";
+const QUOTES_URL         = IS_MOTIVATION ? "motivation-quotes.json" : "quotes.json";
+const SHARE_BRAND        = IS_MOTIVATION ? "Motivational Quotes" : "Calm Down Quotes";
+const SHARE_SHORT_TITLE  = IS_MOTIVATION ? "Motivational Quote" : "Calm Down Quote";
+const SHARE_URL          = IS_MOTIVATION ? `${SITE_URL}motivation.html` : SITE_URL;
+const PREVIEW_IMAGE_URL  = IS_MOTIVATION
+  ? `${SITE_URL}preview-motivation.png`
+  : `${SITE_URL}preview.png`;
 
-const PREVIEW_IMAGE_URL =
-  pageSlug === "motivation"
-    ? `${SITE_URL}preview-motivation.png`
-    : `${SITE_URL}preview.png`;
-
-const STORAGE_KEY = `calm_down_quotes_state_${pageSlug}_v3`;
-const TRANSITION_DURATION_MS = 350; // matches CSS transition
+const TRANSITION_DURATION_MS = 350;
 
 const PREFERS_REDUCED_MOTION =
   typeof window !== "undefined" &&
@@ -40,7 +36,7 @@ const PREFERS_REDUCED_MOTION =
 function trackEvent(name, params = {}) {
   try {
     if (typeof window !== "undefined" && typeof window.gtag === "function") {
-      window.gtag("event", name, params);
+      window.gtag("event", name, { page_id: PAGE_ID, ...params });
     }
   } catch {
     // Analytics should never break the app
@@ -80,12 +76,8 @@ let quotesLoaded = false;
 let shuffledIndices = [];
 let currentIndex = 0;
 
-/**
- * Returns a shuffled array of indices using a simple Fisher-Yates shuffle.
- */
 function shuffleIndices(len) {
   const arr = Array.from({ length: len }, (_, i) => i);
-
   for (let i = arr.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
     [arr[i], arr[j]] = [arr[j], arr[i]];
@@ -93,9 +85,6 @@ function shuffleIndices(len) {
   return arr;
 }
 
-/**
- * Saves the current shuffle state to localStorage.
- */
 function saveState() {
   try {
     localStorage.setItem(
@@ -106,35 +95,27 @@ function saveState() {
       })
     );
   } catch {
-    // localStorage can fail in private mode or if storage is full
+    // ignore storage errors
   }
 }
 
-/**
- * Initialises the quote order, either from saved state or a fresh shuffle.
- */
 function initialiseOrder() {
   try {
     const raw = localStorage.getItem(STORAGE_KEY);
-
     if (raw) {
       const state = JSON.parse(raw);
-
       if (
         Array.isArray(state.order) &&
         typeof state.index === "number" &&
         state.order.length === quotes.length
       ) {
         shuffledIndices = state.order;
-        currentIndex = Math.max(
-          0,
-          Math.min(state.index, state.order.length - 1)
-        );
+        currentIndex = Math.max(0, Math.min(state.index, state.order.length - 1));
         return;
       }
     }
   } catch {
-    // If saved state is not valid we fall back to a fresh shuffle
+    // fall back to new shuffle
   }
 
   shuffledIndices = shuffleIndices(quotes.length);
@@ -142,12 +123,9 @@ function initialiseOrder() {
   saveState();
 }
 
-/**
- * Fetches quotes from the correct JSON file and initialises the app state.
- */
 async function loadQuotes() {
   try {
-    const res = await fetch(QUOTES_PATH, { cache: "no-cache" });
+    const res = await fetch(QUOTES_URL, { cache: "no-cache" });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
 
     const data = await res.json();
@@ -160,10 +138,7 @@ async function loadQuotes() {
 
     initialiseOrder();
 
-    trackEvent("quotes_loaded", {
-      total_quotes: quotes.length,
-      pageSlug
-    });
+    trackEvent("quotes_loaded", { total_quotes: quotes.length });
 
     if (quotes.length > 0 && quoteBtn) {
       generateQuote();
@@ -171,8 +146,7 @@ async function loadQuotes() {
   } catch (err) {
     console.error("Error loading quotes:", err);
     trackEvent("quotes_load_error", {
-      message: err && err.message ? String(err.message) : String(err),
-      pageSlug
+      message: err && err.message ? String(err.message) : String(err)
     });
 
     if (!quoteBox) return;
@@ -194,9 +168,6 @@ loadQuotes();
 /* ========================================================
    TAG CHIPS
 ======================================================== */
-/**
- * Renders the tags as visual chips inside the tags container.
- */
 function renderTagChips(tags) {
   if (!tagsContainer) return;
 
@@ -218,9 +189,6 @@ function renderTagChips(tags) {
 /* ========================================================
    QUOTE GENERATOR
 ======================================================== */
-/**
- * Generates and displays the next quote in the shuffled sequence.
- */
 function generateQuote() {
   if (!quotesLoaded || quotes.length === 0 || !quoteBox) return;
 
@@ -234,10 +202,9 @@ function generateQuote() {
   saveState();
 
   if (quoteBtn) {
-    quoteBtn.textContent =
-      pageSlug === "motivation"
-        ? "Give Me Another Motivational Quote"
-        : "Give Me Another Quote";
+    quoteBtn.textContent = IS_MOTIVATION
+      ? "Give Me Another Motivational Quote"
+      : "Give Me Another Quote";
   }
 
   const updateContent = () => {
@@ -252,7 +219,7 @@ function generateQuote() {
 
     if (!PREFERS_REDUCED_MOTION) {
       quoteBox.classList.remove("visible");
-      void quoteBox.offsetWidth; // force reflow
+      void quoteBox.offsetWidth; // reflow
       quoteBox.classList.add("visible");
     } else {
       quoteBox.classList.add("visible");
@@ -273,14 +240,13 @@ function generateQuote() {
 
   trackEvent("quote_generated", {
     index: currentIndex - 1,
-    total_quotes: quotes.length,
-    pageSlug
+    total_quotes: quotes.length
   });
 }
 
 quoteBtn?.addEventListener("click", generateQuote);
 
-/* Keyboard support: Space, Enter, or ArrowRight for the next quote */
+/* Keyboard shortcut: Space / Enter / ArrowRight */
 document.addEventListener("keydown", (event) => {
   if (!quoteBtn) return;
 
@@ -299,7 +265,7 @@ document.addEventListener("keydown", (event) => {
     event.key === "ArrowRight"
   ) {
     event.preventDefault();
-    trackEvent("quote_keyboard_shortcut", { key: event.key, pageSlug });
+    trackEvent("quote_keyboard_shortcut", { key: event.key });
     generateQuote();
   }
 });
@@ -331,8 +297,8 @@ function buildShareText() {
           .join(", ")
       : "",
     "",
-    `Shared from ${BRAND_NAME}`,
-    pageSlug === "motivation" ? `${SITE_URL}motivation.html` : SITE_URL
+    `Shared from ${SHARE_BRAND}`,
+    SHARE_URL
   ].filter(Boolean);
 
   return parts.join("\n");
@@ -360,7 +326,7 @@ copyBtn?.addEventListener("click", async () => {
     }
 
     await navigator.clipboard.writeText(text);
-    trackEvent("quote_copied", { pageSlug });
+    trackEvent("quote_copied");
     if (copyFeedback) {
       copyFeedback.textContent = "Copied.";
       copyFeedback.classList.add("visible");
@@ -378,7 +344,7 @@ whatsappBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_whatsapp", { pageSlug });
+  trackEvent("share_whatsapp");
 
   window.open(
     `https://api.whatsapp.com/send?text=${encodeURIComponent(text)}`,
@@ -391,7 +357,7 @@ smsBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_sms", { pageSlug });
+  trackEvent("share_sms");
 
   window.location.href = `sms:?body=${encodeURIComponent(text)}`;
 });
@@ -400,13 +366,13 @@ messengerBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  const appId = "123"; // replace with a real Facebook App ID if you ever use this
-  trackEvent("share_messenger", { pageSlug });
+  const appId = "123"; // replace with real App ID if used
+  trackEvent("share_messenger");
 
   window.open(
     `https://www.facebook.com/dialog/send?app_id=${encodeURIComponent(
       appId
-    )}&link=${encodeURIComponent(SITE_URL)}&quote=${encodeURIComponent(text)}`,
+    )}&link=${encodeURIComponent(SHARE_URL)}&quote=${encodeURIComponent(text)}`,
     "_blank",
     "noopener,noreferrer"
   );
@@ -416,11 +382,11 @@ pinterestBtn?.addEventListener("click", () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_pinterest", { pageSlug });
+  trackEvent("share_pinterest");
 
   window.open(
     `https://pinterest.com/pin/create/button/?url=${encodeURIComponent(
-      pageSlug === "motivation" ? `${SITE_URL}motivation.html` : SITE_URL
+      SHARE_URL
     )}&media=${encodeURIComponent(
       PREVIEW_IMAGE_URL
     )}&description=${encodeURIComponent(text)}`,
@@ -433,7 +399,7 @@ instagramBtn?.addEventListener("click", async () => {
   const text = requireShareText();
   if (!text) return;
 
-  trackEvent("share_instagram", { pageSlug });
+  trackEvent("share_instagram");
 
   alert(
     "The full quote has been copied. Open Instagram, create a Story or Post, and paste the text."
@@ -444,7 +410,7 @@ instagramBtn?.addEventListener("click", async () => {
       await navigator.clipboard.writeText(text);
     }
   } catch {
-    // If clipboard write fails we do not need to show another message
+    // ignore
   }
 });
 
@@ -455,11 +421,11 @@ shareBtn?.addEventListener("click", async () => {
   if (navigator.share) {
     try {
       await navigator.share({
-        title: SHORT_TITLE,
+        title: SHARE_SHORT_TITLE,
         text: text.substring(0, 250),
-        url: pageSlug === "motivation" ? `${SITE_URL}motivation.html` : SITE_URL
+        url: SHARE_URL
       });
-      trackEvent("share_native", { pageSlug });
+      trackEvent("share_native");
     } catch (e) {
       if (e.name !== "AbortError") {
         console.error("Error sharing:", e);
@@ -472,7 +438,7 @@ shareBtn?.addEventListener("click", async () => {
         return;
       }
       await navigator.clipboard.writeText(text);
-      trackEvent("share_fallback_copy", { pageSlug });
+      trackEvent("share_fallback_copy");
       if (copyFeedback) {
         copyFeedback.textContent = "Share text copied.";
         copyFeedback.classList.add("visible");
@@ -490,10 +456,7 @@ shareBtn?.addEventListener("click", async () => {
    SUBSCRIBE CLICK TRACKING
 ======================================================== */
 subscribeBtn?.addEventListener("click", () => {
-  trackEvent("subscribe_click", {
-    location: "home_subscribe_section",
-    pageSlug
-  });
+  trackEvent("subscribe_click", { location: `${PAGE_ID}_subscribe_section` });
 });
 
 /* ========================================================
@@ -522,9 +485,8 @@ document.addEventListener(
     const deltaX = endX - touchStartX;
     const deltaY = endY - touchStartY;
 
-    // Only trigger on a clear horizontal swipe
     if (Math.abs(deltaX) > 60 && Math.abs(deltaX) > Math.abs(deltaY)) {
-      trackEvent("quote_swiped", { pageSlug });
+      trackEvent("quote_swiped");
       generateQuote();
     }
   },
