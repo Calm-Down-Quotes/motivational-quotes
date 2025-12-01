@@ -6,27 +6,24 @@
 const SITE_URL = "https://calm-down-quotes.github.io/";
 
 // Detect which page we are on by the URL
-const PATH =
-  typeof window !== "undefined" && window.location && window.location.pathname
-    ? window.location.pathname.toLowerCase()
-    : "";
+const PATH = (typeof window !== "undefined" && window.location && window.location.pathname)
+  ? window.location.pathname.toLowerCase()
+  : "";
 
-// For the project page served at /motivational-quotes/
-const IS_MOTIVATION = PATH.includes("motivational-quotes") || PATH.includes("motivation");
+const IS_MOTIVATION = PATH.includes("motivation");
 
 // Per-page settings
-const PAGE_ID           = IS_MOTIVATION ? "motivation" : "calm";
-const STORAGE_KEY       = IS_MOTIVATION ? "motivation_quotes_state_v1" : "calm_down_quotes_state_v3";
-const QUOTES_URL        = IS_MOTIVATION ? "motivation-quotes.json" : "quotes.json";
-const SHARE_BRAND       = IS_MOTIVATION ? "Motivational Quotes" : "Calm Down Quotes";
-const SHARE_SHORT_TITLE = IS_MOTIVATION ? "Motivational Quote" : "Calm Down Quote";
+const PAGE_ID            = IS_MOTIVATION ? "motivation" : "calm";
+const STORAGE_KEY        = IS_MOTIVATION ? "motivation_quotes_state_v1" : "calm_down_quotes_state_v3";
 
-const SHARE_URL = IS_MOTIVATION
-  ? `${SITE_URL}motivational-quotes/`
-  : SITE_URL;
+// For now, BOTH pages use the same JSON file:
+const QUOTES_URL         = "quotes.json";
 
-const PREVIEW_IMAGE_URL = IS_MOTIVATION
-  ? `${SITE_URL}motivational-quotes/preview-motivation.png`
+const SHARE_BRAND        = IS_MOTIVATION ? "Motivational Quotes" : "Calm Down Quotes";
+const SHARE_SHORT_TITLE  = IS_MOTIVATION ? "Motivational Quote" : "Calm Down Quote";
+const SHARE_URL          = IS_MOTIVATION ? `${SITE_URL}motivational-quotes/` : SITE_URL;
+const PREVIEW_IMAGE_URL  = IS_MOTIVATION
+  ? `${SITE_URL}preview-motivation.png`
   : `${SITE_URL}preview.png`;
 
 const TRANSITION_DURATION_MS = 350;
@@ -116,10 +113,7 @@ function initialiseOrder() {
         state.order.length === quotes.length
       ) {
         shuffledIndices = state.order;
-        currentIndex = Math.max(
-          0,
-          Math.min(state.index, state.order.length - 1)
-        );
+        currentIndex = Math.max(0, Math.min(state.index, state.order.length - 1));
         return;
       }
     }
