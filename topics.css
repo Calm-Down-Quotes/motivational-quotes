@@ -1,0 +1,50 @@
+.breadcrumbs{
+  display:flex;align-items:center;gap:9px;margin:0 0 16px;padding:0 6px;
+  color:var(--muted);font-size:12px;
+}
+.breadcrumbs a{text-decoration:none}
+.breadcrumbs a:hover{text-decoration:underline}
+.quote-entry{margin:34px 0 42px}
+.quote-entry blockquote{margin-bottom:14px}
+.quote-entry p{margin-top:0}
+.topic-hub{
+  width:min(1120px,calc(100% - 40px));margin:0 auto 120px;
+  padding-top:54px;border-top:1px solid var(--line);
+}
+.topic-hub-head{
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(32px,8vw,110px);
+  align-items:end;margin-bottom:32px;
+}
+.topic-hub h2,.topic-links h2{
+  margin:10px 0 0;font:400 clamp(36px,5vw,60px)/1.02 var(--serif);
+  letter-spacing:-.03em;text-wrap:balance;
+}
+.topic-hub .intro-copy{max-width:640px;color:var(--muted);font-size:16px;margin:0}
+.topic-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.topic-card{
+  min-height:170px;display:flex;flex-direction:column;justify-content:space-between;gap:26px;
+  padding:24px;border:1px solid var(--line);border-radius:var(--radius-md);
+  background:var(--surface);backdrop-filter:var(--glass);text-decoration:none;
+  transition:transform .18s var(--ease),background .18s,border-color .18s;
+}
+.topic-card:hover{transform:translateY(-3px);background:var(--surface-strong)}
+.topic-card strong{font:400 27px/1.05 var(--serif);letter-spacing:-.02em}
+.topic-card span{color:var(--muted);font-size:13px}
+.topic-links{margin:72px 0 0;padding-top:42px;border-top:1px solid var(--line)}
+.topic-links .topic-grid.compact{grid-template-columns:repeat(3,1fr);margin-top:24px}
+.topic-links .topic-card{min-height:130px;padding:20px;gap:18px}
+.topic-links .topic-card strong{font-size:23px}
+.guide-topic-links{margin:56px 0 0}
+@media(max-width:820px){
+  .topic-hub-head{grid-template-columns:1fr;gap:18px}
+  .topic-grid{grid-template-columns:repeat(2,1fr)}
+  .topic-links .topic-grid.compact{grid-template-columns:1fr}
+}
+@media(max-width:720px){
+  .breadcrumbs{margin-top:2px}
+  .topic-hub{width:calc(100% - 32px);margin-bottom:105px;padding-top:38px}
+  .topic-grid{grid-template-columns:1fr}
+  .topic-card{min-height:132px;padding:20px}
+  .topic-card strong{font-size:25px}
+  .topic-links{margin-top:56px}
+}
