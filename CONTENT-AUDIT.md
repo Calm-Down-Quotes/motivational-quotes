@@ -4,7 +4,7 @@
 
 The original live library contained 40 attributed quotations. The data structure was complete, but the library relied too heavily on third-party quotations for a site intended to become a monetised publishing asset.
 
-The live library has therefore been redesigned around original editorial material owned by Motivational Quotes. The original 40-record library is preserved separately as `quotes-attributed-archive.json` for historical reference and further provenance research; it is no longer intended to be served by the public quote engine.
+The live library has therefore been redesigned around original editorial material owned by Motivational Quotes. The retired 40-record library remains preserved in Git history and the dedicated audit branch for historical reference and provenance research; it is not shipped from the production branch and is no longer served by the public quote engine.
 
 This is an editorial and risk-reduction decision, not a legal opinion.
 
