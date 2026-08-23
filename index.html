@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
   <title>Motivational Quotes — Turn Motivation Into Action</title>
-  <meta name="description" content="Original motivational quotes with clear meaning and practical action steps for discipline, focus, confidence, resilience and momentum.">
+  <meta name="description" content="Original motivational quotes with clear meaning and practical action steps for discipline, focus, confidence, resilience, momentum and purpose.">
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
   <meta name="author" content="Motivational Quotes">
   <meta name="theme-color" content="#f3c56f">
@@ -21,10 +21,11 @@
   <meta property="og:url" content="https://motivation-daily.pages.dev/">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Motivational Quotes — Turn Motivation Into Action">
-  <meta name="twitter:description" content="Find original motivation for discipline, focus, confidence, resilience and momentum.">
+  <meta name="twitter:description" content="Find original motivation for discipline, focus, confidence, resilience, momentum and purpose.">
 
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; manifest-src 'self'; upgrade-insecure-requests">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="topics.css">
 
   <script type="application/ld+json">
   {
@@ -32,7 +33,7 @@
     "@type":"WebSite",
     "name":"Motivational Quotes",
     "url":"https://motivation-daily.pages.dev/",
-    "description":"Original motivational quotes with clear meaning and practical action steps for discipline, focus, confidence, resilience and momentum.",
+    "description":"Original motivational quotes with clear meaning and practical action steps for discipline, focus, confidence, resilience, momentum and purpose.",
     "inLanguage":"en-AU"
   }
   </script>
@@ -55,6 +56,7 @@
       <button type="button" data-view="home" class="active">Home</button>
       <button type="button" data-view="focus">Choose focus</button>
       <button type="button" data-view="saved">Saved <span id="saved-count">0</span></button>
+      <a href="#explore">Topics</a>
       <a href="guide.html">Guide</a>
     </nav>
   </header>
@@ -112,38 +114,13 @@
       <p class="intro">Pick the kind of motivation you need. You can change it whenever you want.</p>
 
       <div id="focus-grid" class="focus-grid">
-        <button type="button" data-focus="start">
-          <span class="focus-symbol" aria-hidden="true">→</span>
-          <strong>Start moving</strong>
-          <small>When thinking has replaced doing.</small>
-        </button>
-        <button type="button" data-focus="discipline">
-          <span class="focus-symbol" aria-hidden="true">◇</span>
-          <strong>Build discipline</strong>
-          <small>When consistency matters more than mood.</small>
-        </button>
-        <button type="button" data-focus="confidence">
-          <span class="focus-symbol" aria-hidden="true">↑</span>
-          <strong>Reset confidence</strong>
-          <small>When self-doubt is getting too loud.</small>
-        </button>
-        <button type="button" data-focus="resilience">
-          <span class="focus-symbol" aria-hidden="true">↻</span>
-          <strong>Stay resilient</strong>
-          <small>When the setback is not the finish line.</small>
-        </button>
-        <button type="button" data-focus="focus">
-          <span class="focus-symbol" aria-hidden="true">◎</span>
-          <strong>Find focus</strong>
-          <small>When everything feels equally urgent.</small>
-        </button>
-        <button type="button" data-focus="purpose">
-          <span class="focus-symbol" aria-hidden="true">✦</span>
-          <strong>Remember why</strong>
-          <small>When the goal has lost its meaning.</small>
-        </button>
+        <button type="button" data-focus="start"><span class="focus-symbol" aria-hidden="true">→</span><strong>Start moving</strong><small>When thinking has replaced doing.</small></button>
+        <button type="button" data-focus="discipline"><span class="focus-symbol" aria-hidden="true">◇</span><strong>Build discipline</strong><small>When consistency matters more than mood.</small></button>
+        <button type="button" data-focus="confidence"><span class="focus-symbol" aria-hidden="true">↑</span><strong>Reset confidence</strong><small>When self-doubt is getting too loud.</small></button>
+        <button type="button" data-focus="resilience"><span class="focus-symbol" aria-hidden="true">↻</span><strong>Stay resilient</strong><small>When the setback is not the finish line.</small></button>
+        <button type="button" data-focus="focus"><span class="focus-symbol" aria-hidden="true">◎</span><strong>Find focus</strong><small>When everything feels equally urgent.</small></button>
+        <button type="button" data-focus="purpose"><span class="focus-symbol" aria-hidden="true">✦</span><strong>Remember why</strong><small>When the goal has lost its meaning.</small></button>
       </div>
-
       <button id="any-focus" class="text-link" type="button">Show me anything useful</button>
     </section>
 
@@ -156,58 +133,48 @@
     </section>
 
     <section class="home-content" aria-labelledby="why-title">
-      <div>
-        <p class="eyebrow">More than a quote generator</p>
-        <h2 id="why-title">Motivation is useful when it changes what happens next.</h2>
-      </div>
+      <div><p class="eyebrow">More than a quote generator</p><h2 id="why-title">Motivation is useful when it changes what happens next.</h2></div>
       <div class="home-copy">
         <p>A useful thought can interrupt a stale pattern, but inspiration on its own is easy to lose. This site pairs each original quote with a plain-English interpretation and a small action so the idea has somewhere to go.</p>
         <p>Use it when you need to begin, rebuild momentum, sharpen your focus or remember why a difficult goal matters. If you want a deeper system, read the <a href="guide.html">practical motivation guide</a>.</p>
       </div>
     </section>
+
+    <section id="explore" class="topic-hub" aria-labelledby="explore-title">
+      <div class="topic-hub-head">
+        <div><p class="eyebrow">Explore by need</p><h2 id="explore-title">Go deeper than a single quote.</h2></div>
+        <p class="intro-copy">Each topic combines original motivational writing with practical guidance for a specific problem: starting, staying consistent, trusting yourself, recovering, focusing or reconnecting with purpose.</p>
+      </div>
+      <div class="topic-grid">
+        <a class="topic-card" href="momentum.html"><strong>Momentum</strong><span>Start smaller, beat avoidance and create visible movement.</span></a>
+        <a class="topic-card" href="discipline.html"><strong>Discipline</strong><span>Build consistency that does not depend on mood.</span></a>
+        <a class="topic-card" href="confidence.html"><strong>Confidence</strong><span>Create evidence, handle doubt and act before certainty.</span></a>
+        <a class="topic-card" href="resilience.html"><strong>Resilience</strong><span>Recover from setbacks without turning them into identity.</span></a>
+        <a class="topic-card" href="focus.html"><strong>Focus</strong><span>Protect attention and decide what deserves it now.</span></a>
+        <a class="topic-card" href="purpose.html"><strong>Purpose</strong><span>Reconnect effort to values, meaning and direction.</span></a>
+      </div>
+    </section>
   </main>
 
-  <div class="themes" aria-label="Choose an atmosphere">
-    <span>Atmosphere</span>
-    <button type="button" data-theme="sunrise" aria-label="Sunrise atmosphere" title="Sunrise"></button>
-    <button type="button" data-theme="ember" aria-label="Ember atmosphere" title="Ember"></button>
-    <button type="button" data-theme="midnight" aria-label="Midnight atmosphere" title="Midnight"></button>
-  </div>
+  <div class="themes" aria-label="Choose an atmosphere"><span>Atmosphere</span><button type="button" data-theme="sunrise" aria-label="Sunrise atmosphere" title="Sunrise"></button><button type="button" data-theme="ember" aria-label="Ember atmosphere" title="Ember"></button><button type="button" data-theme="midnight" aria-label="Midnight atmosphere" title="Midnight"></button></div>
 
   <footer class="site-footer">
     <span>One useful thought. One next move.</span>
-    <nav aria-label="Footer navigation">
-      <a href="guide.html">Guide</a>
-      <a href="about.html">About</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </nav>
+    <nav aria-label="Footer navigation"><a href="#explore">Topics</a><a href="guide.html">Guide</a><a href="about.html">About</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms</a></nav>
   </footer>
 
   <div id="share-layer" class="share-layer" hidden>
     <section class="share-sheet" role="dialog" aria-modal="true" aria-labelledby="share-title">
       <button id="close-share" class="close" type="button" aria-label="Close share dialog">×</button>
-      <p class="eyebrow">Pass it on</p>
-      <h2 id="share-title">Share this motivation</h2>
-      <p id="share-quote" class="share-quote"></p>
-      <div class="share-grid">
-        <button type="button" data-share="whatsapp"><span aria-hidden="true">WA</span>WhatsApp</button>
-        <button type="button" data-share="facebook"><span aria-hidden="true">f</span>Facebook</button>
-        <button type="button" data-share="x"><span aria-hidden="true">𝕏</span>X</button>
-        <button type="button" data-share="email"><span aria-hidden="true">✉</span>Email</button>
-      </div>
-      <button id="share-image" class="copy" type="button">Share as an image</button>
-      <button id="copy" class="copy secondary-copy" type="button">Copy quote and link</button>
+      <p class="eyebrow">Pass it on</p><h2 id="share-title">Share this motivation</h2><p id="share-quote" class="share-quote"></p>
+      <div class="share-grid"><button type="button" data-share="whatsapp"><span aria-hidden="true">WA</span>WhatsApp</button><button type="button" data-share="facebook"><span aria-hidden="true">f</span>Facebook</button><button type="button" data-share="x"><span aria-hidden="true">𝕏</span>X</button><button type="button" data-share="email"><span aria-hidden="true">✉</span>Email</button></div>
+      <button id="share-image" class="copy" type="button">Share as an image</button><button id="copy" class="copy secondary-copy" type="button">Copy quote and link</button>
       <p id="share-status" class="share-note" role="status" aria-live="polite">On supported phones, image sharing opens your normal share menu.</p>
     </section>
   </div>
 
   <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
-
-  <noscript>
-    <div class="noscript">This site works best with JavaScript enabled. You can still read the <a href="guide.html">practical motivation guide</a>.</div>
-  </noscript>
-
+  <noscript><div class="noscript">This site works best with JavaScript enabled. You can still read the <a href="guide.html">practical motivation guide</a> or <a href="#explore">browse motivation topics</a>.</div></noscript>
   <script src="script.js" defer></script>
 </body>
 </html>
