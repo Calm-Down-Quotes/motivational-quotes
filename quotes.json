@@ -1,322 +1,74 @@
 [
-  {
-    "quote": "The future depends on what you do today.",
-    "author": "Mahatma Gandhi",
-    "meaning": "Tomorrow’s results are built from the choices you make right now, not from vague intentions.",
-    "instruction": "Pick one small action today that moves you closer to the life you want and do it before the day ends.",
-    "category": "Motivation & Action",
-    "tags": ["gandhi", "action", "future", "focus"]
-  },
-  {
-    "quote": "It always seems impossible until it's done.",
-    "author": "Nelson Mandela",
-    "meaning": "Big goals look unachievable from the starting line, but they shrink as you move toward them.",
-    "instruction": "Break one intimidating goal into the next tiny step and complete only that step today.",
-    "category": "Resilience & Grit",
-    "tags": ["mandela", "persistence", "courage", "goals"]
-  },
-  {
-    "quote": "Our greatest glory is not in never falling, but in rising every time we fall.",
-    "author": "Confucius",
-    "meaning": "Failure is not the end; your willingness to get back up is what defines your strength.",
-    "instruction": "Think of one setback you still carry and decide one way you can stand back up from it today.",
-    "category": "Resilience & Grit",
-    "tags": ["confucius", "failure", "growth", "strength"]
-  },
-  {
-    "quote": "The man who moves a mountain begins by carrying away small stones.",
-    "author": "Confucius",
-    "meaning": "Massive change is just the accumulation of many small, consistent efforts.",
-    "instruction": "Choose one tiny task that feels almost too small and complete it as a vote for your future self.",
-    "category": "Discipline & Habits",
-    "tags": ["confucius", "habits", "progress", "patience"]
-  },
-  {
-    "quote": "You have power over your mind—not outside events. Realize this, and you will find strength.",
-    "author": "Marcus Aurelius",
-    "meaning": "You can’t control everything that happens, but you can control how you interpret and respond to it.",
-    "instruction": "When something bothers you today, pause and ask: \"What part of this is actually under my control?\"",
-    "category": "Strength & Control",
-    "tags": ["marcus aurelius", "stoic", "control", "mindset"]
-  },
-  {
-    "quote": "Waste no more time arguing what a good man should be. Be one.",
-    "author": "Marcus Aurelius",
-    "meaning": "Instead of debating ideals, live them through your behaviour in each moment.",
-    "instruction": "Pick one quality you respect in others and deliberately practice it in one situation today.",
-    "category": "Character & Integrity",
-    "tags": ["marcus aurelius", "character", "action", "values"]
-  },
-  {
-    "quote": "If it is not right, do not do it; if it is not true, do not say it.",
-    "author": "Marcus Aurelius",
-    "meaning": "A strong life is built by filtering your actions and words through simple, firm principles.",
-    "instruction": "Before you act or speak today, run it through: \"Is it right? Is it true?\" and adjust if needed.",
-    "category": "Character & Integrity",
-    "tags": ["marcus aurelius", "ethics", "discipline", "truth"]
-  },
-  {
-    "quote": "Luck is what happens when preparation meets opportunity.",
-    "author": "Seneca",
-    "meaning": "What looks like \"good luck\" is often the result of quiet work done long before a chance appears.",
-    "instruction": "Invest thirty focused minutes today into a skill or project that could pay off later.",
-    "category": "Preparation & Opportunity",
-    "tags": ["seneca", "luck", "preparation", "work"]
-  },
-  {
-    "quote": "Begin at once to live, and count each separate day as a separate life.",
-    "author": "Seneca",
-    "meaning": "Every day is a fresh, complete chance to live intentionally instead of waiting for the future.",
-    "instruction": "Treat today as a whole lifetime: decide how you want this ‘life’ to feel and act accordingly.",
-    "category": "Presence & Purpose",
-    "tags": ["seneca", "time", "present", "intentional"]
-  },
-  {
-    "quote": "First say to yourself what you would be; and then do what you have to do.",
-    "author": "Epictetus",
-    "meaning": "Clarity about who you want to become has to come before consistent action.",
-    "instruction": "Write one sentence that finishes the phrase: \"I am the kind of person who…\" and take one action that matches it.",
-    "category": "Identity & Direction",
-    "tags": ["epictetus", "identity", "goals", "clarity"]
-  },
-  {
-    "quote": "No great thing is created suddenly.",
-    "author": "Epictetus",
-    "meaning": "Meaningful achievements are slow builds, not instant wins.",
-    "instruction": "Choose one long-term project and give it at least fifteen minutes of focused effort today.",
-    "category": "Patience & Process",
-    "tags": ["epictetus", "progress", "patience", "grit"]
-  },
-  {
-    "quote": "What you get by achieving your goals is not as important as what you become by achieving them.",
-    "author": "Zig Ziglar",
-    "meaning": "Goals are vehicles for growth; the real reward is the person you shape yourself into along the way.",
-    "instruction": "Look at one goal and note how it is forcing you to grow, not just what it will give you.",
-    "category": "Growth Mindset",
-    "tags": ["ziglar", "goals", "growth", "mindset"]
-  },
-  {
-    "quote": "Whether you think you can or you think you can’t, you’re right.",
-    "author": "Henry Ford",
-    "meaning": "Your beliefs quietly shape your effort, which then shapes your results.",
-    "instruction": "Catch one limiting thought today and deliberately replace it with a more useful one.",
-    "category": "Self-Belief",
-    "tags": ["ford", "belief", "mindset", "confidence"]
-  },
-  {
-    "quote": "Do what you can, with what you have, where you are.",
-    "author": "Theodore Roosevelt",
-    "meaning": "Waiting for perfect conditions keeps you stuck; progress starts from your real situation, not your ideal one.",
-    "instruction": "Identify one area where you’ve been waiting and take one imperfect action with what you already have.",
-    "category": "Motivation & Action",
-    "tags": ["roosevelt", "action", "imperfect", "start"]
-  },
-  {
-    "quote": "In the middle of difficulty lies opportunity.",
-    "author": "Albert Einstein",
-    "meaning": "Challenges often highlight the exact skills, connections, or insights you need to grow.",
-    "instruction": "Take one current problem and list one potential advantage or lesson hidden inside it.",
-    "category": "Perspective & Mindset",
-    "tags": ["einstein", "opportunity", "problems", "growth"]
-  },
-  {
-    "quote": "Courage is not the absence of fear, but the triumph over it.",
-    "author": "Nelson Mandela",
-    "meaning": "Bravery is feeling fear and choosing to move anyway, not waiting until fear disappears.",
-    "instruction": "Notice one thing you’re avoiding out of fear and take one small step toward it.",
-    "category": "Courage & Fear",
-    "tags": ["mandela", "courage", "fear", "bravery"]
-  },
-  {
-    "quote": "You miss 100% of the shots you don't take.",
-    "author": "Wayne Gretzky",
-    "meaning": "Avoiding risk guarantees no result; trying at least opens the door to success.",
-    "instruction": "Take one \"shot\" today—send the message, apply, ask, or try—without overthinking the outcome.",
-    "category": "Risk & Opportunity",
-    "tags": ["gretzky", "risk", "chance", "try"]
-  },
-  {
-    "quote": "Act as if what you do makes a difference. It does.",
-    "author": "William James",
-    "meaning": "Your daily choices ripple outward more than you realize; your effort is not meaningless.",
-    "instruction": "Choose one small action today that improves life for someone else, even slightly.",
-    "category": "Purpose & Impact",
-    "tags": ["william james", "impact", "meaning", "service"]
-  },
-  {
-    "quote": "The only way to do great work is to love what you do.",
-    "author": "Steve Jobs",
-    "meaning": "Sustained excellence comes from genuine interest and care, not just discipline.",
-    "instruction": "Notice one part of your current work you actually enjoy and lean into it with more attention.",
-    "category": "Work & Passion",
-    "tags": ["jobs", "work", "passion", "craft"]
-  },
-  {
-    "quote": "Success is the sum of small efforts, repeated day in and day out.",
-    "author": "Robert Collier",
-    "meaning": "Consistency multiplies; even modest effort compounds into significant progress over time.",
-    "instruction": "Choose one ten-minute habit and commit to doing it every day this week.",
-    "category": "Discipline & Habits",
-    "tags": ["collier", "consistency", "habits", "success"]
-  },
-  {
-    "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
-    "author": "Ralph Waldo Emerson",
-    "meaning": "Your inner resources—character, courage, imagination—matter more than your past or circumstances.",
-    "instruction": "Write down three inner strengths you’ve already proven you have and keep them visible today.",
-    "category": "Self-Belief",
-    "tags": ["emerson", "strength", "inner", "mindset"]
-  },
-  {
-    "quote": "Go confidently in the direction of your dreams. Live the life you have imagined.",
-    "author": "Henry David Thoreau",
-    "meaning": "Your dreams require decisive movement toward them, not hesitant circling around them.",
-    "instruction": "Take one concrete, visible step toward a dream you’ve been keeping only in your head.",
-    "category": "Dreams & Direction",
-    "tags": ["thoreau", "dreams", "courage", "action"]
-  },
-  {
-    "quote": "Fortune favours the bold.",
-    "author": "Virgil",
-    "meaning": "Life often rewards those willing to act decisively instead of staying safe on the sidelines.",
-    "instruction": "Choose one area where you’ve been timid and make a bolder decision than usual today.",
-    "category": "Courage & Risk",
-    "tags": ["virgil", "boldness", "risk", "fortune"]
-  },
-  {
-    "quote": "Well done is better than well said.",
-    "author": "Benjamin Franklin",
-    "meaning": "Talk is cheap; actions carry more weight than promises or opinions.",
-    "instruction": "Pick one thing you’ve been talking about and take a concrete action toward it in silence.",
-    "category": "Action Over Words",
-    "tags": ["franklin", "action", "integrity", "follow-through"]
-  },
-  {
-    "quote": "Energy and persistence conquer all things.",
-    "author": "Benjamin Franklin",
-    "meaning": "Sustained effort combined with enthusiasm eventually breaks through obstacles.",
-    "instruction": "Choose one task you’ve been dragging and attack it with a set time block of focused, energetic work.",
-    "category": "Resilience & Grit",
-    "tags": ["franklin", "persistence", "energy", "grit"]
-  },
-  {
-    "quote": "If you are going through hell, keep going.",
-    "author": "Winston Churchill",
-    "meaning": "When life is painful, stopping in place keeps you stuck in the worst part; forward motion is the way out.",
-    "instruction": "If today feels heavy, commit to just the next right step instead of the whole journey.",
-    "category": "Hard Times",
-    "tags": ["churchill", "perseverance", "struggle", "hope"]
-  },
-  {
-    "quote": "I am not afraid of storms, for I am learning how to sail my ship.",
-    "author": "Louisa May Alcott",
-    "meaning": "Challenges are training, not punishment; they teach you how to handle more in the future.",
-    "instruction": "Reframe one current difficulty as practice for a stronger version of you.",
-    "category": "Learning & Growth",
-    "tags": ["alcott", "learning", "storms", "growth"]
-  },
-  {
-    "quote": "Fall seven times and stand up eight.",
-    "author": "Japanese Proverb",
-    "meaning": "Resilience is simply standing up one more time than you fall down.",
-    "instruction": "Think of one thing you’ve quit on and decide what \"standing up\" again would look like today.",
-    "category": "Resilience & Grit",
-    "tags": ["proverb", "japanese", "resilience", "persistence"]
-  },
-  {
-    "quote": "A journey of a thousand miles begins with a single step.",
-    "author": "Lao Tzu",
-    "meaning": "Every long path starts with one small, sometimes unimpressive move.",
-    "instruction": "Take the smallest possible first step toward a big goal you’ve been delaying.",
-    "category": "Starting & Momentum",
-    "tags": ["lao tzu", "journey", "start", "momentum"]
-  },
-  {
-    "quote": "When you are going through difficult times, remember that diamonds are made under pressure.",
-    "author": "Unknown",
-    "meaning": "Pressure can refine you, strengthening qualities that would never grow in comfort.",
-    "instruction": "Ask yourself: \"What strength is this pressure trying to pull out of me?\" and act in line with that.",
-    "category": "Hard Times",
-    "tags": ["unknown", "pressure", "strength", "refinement"]
-  },
-  {
-    "quote": "What we fear doing most is usually what we most need to do.",
-    "author": "Tim Ferriss",
-    "meaning": "Avoided actions often point straight at your next level of growth.",
-    "instruction": "Write down the one task you fear most and take a small but real step toward it today.",
-    "category": "Courage & Fear",
-    "tags": ["ferriss", "fear", "growth", "action"]
-  },
-  {
-    "quote": "You are never too old to set another goal or to dream a new dream.",
-    "author": "C. S. Lewis",
-    "meaning": "Age does not cancel your capacity to aim at something meaningful.",
-    "instruction": "Allow yourself to write down one new goal, even if it feels late to start.",
-    "category": "Lifelong Growth",
-    "tags": ["cs lewis", "age", "goals", "dreams"]
-  },
-  {
-    "quote": "The best way out is always through.",
-    "author": "Robert Frost",
-    "meaning": "Trying to escape discomfort often prolongs it; facing it directly shortens the path.",
-    "instruction": "Choose one uncomfortable situation and deal with it honestly instead of dodging it.",
-    "category": "Courage & Responsibility",
-    "tags": ["frost", "courage", "problems", "resolve"]
-  },
-  {
-    "quote": "Discipline is the bridge between goals and accomplishment.",
-    "author": "Jim Rohn",
-    "meaning": "Desire alone doesn’t create results; consistent behaviour is the connecting structure.",
-    "instruction": "Identify one daily discipline that would move a key goal forward and start it today.",
-    "category": "Discipline & Habits",
-    "tags": ["rohn", "discipline", "habits", "goals"]
-  },
-  {
-    "quote": "You are stronger than you believe. You have greater powers than you know.",
-    "author": "Antoine de Saint-Exupéry",
-    "meaning": "You usually underestimate your capacity because you only measure it against your comfort zone.",
-    "instruction": "Do one thing today that is just beyond what you normally think you can handle.",
-    "category": "Self-Belief",
-    "tags": ["saint-exupéry", "strength", "belief", "potential"]
-  },
-  {
-    "quote": "Nothing will work unless you do.",
-    "author": "Maya Angelou",
-    "meaning": "Plans, tools, and ideas only matter if you bring effort and follow-through.",
-    "instruction": "Choose one area where you’ve been waiting for a \"sign\" and instead apply focused work.",
-    "category": "Motivation & Action",
-    "tags": ["angelou", "work", "effort", "ownership"]
-  },
-  {
-    "quote": "If you can dream it, you can do it.",
-    "author": "Walt Disney",
-    "meaning": "Imagining a future is the first sign that it might be possible for you to build it.",
-    "instruction": "Take one dream you’ve kept private and sketch out the first three steps toward it.",
-    "category": "Dreams & Direction",
-    "tags": ["disney", "dreams", "possibility", "vision"]
-  },
-  {
-    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
-    "author": "Winston Churchill",
-    "meaning": "Neither wins nor losses define you; what matters most is your willingness to keep going.",
-    "instruction": "Whatever your last result was—good or bad—decide the next action instead of resting on it.",
-    "category": "Resilience & Grit",
-    "tags": ["churchill", "success", "failure", "continue"]
-  },
-  {
-    "quote": "The secret of getting ahead is getting started.",
-    "author": "Mark Twain",
-    "meaning": "Overthinking the whole task often delays you more than the work itself.",
-    "instruction": "Start a task you’ve been postponing and commit to just five focused minutes.",
-    "category": "Starting & Momentum",
-    "tags": ["twain", "start", "procrastination", "momentum"]
-  },
-  {
-    "quote": "Action is the foundational key to all success.",
-    "author": "Pablo Picasso",
-    "meaning": "Ideas only become real when you convert them into movement.",
-    "instruction": "For one idea you like, stop planning and take a concrete step that proves you’re serious.",
-    "category": "Motivation & Action",
-    "tags": ["picasso", "action", "success", "movement"]
-  }
+{"id":"mq-001","quote":"A rough first step beats a perfect plan that never leaves your head.","author":"Motivational Quotes","meaning":"Starting creates information that planning alone cannot give you.","instruction":"Choose the smallest visible version of the task and finish it before improving the plan.","category":"Start & Momentum","tags":["start","action","momentum","progress"],"source":"Original editorial"},
+{"id":"mq-002","quote":"You do not need more motivation to begin. You need a smaller beginning.","author":"Motivational Quotes","meaning":"Resistance often falls when the first action becomes easy enough to attempt.","instruction":"Shrink the task until you can start it in under five minutes, then begin immediately.","category":"Start & Momentum","tags":["start","procrastination","action","small-steps"],"source":"Original editorial"},
+{"id":"mq-003","quote":"Momentum is built after the first move, not before it.","author":"Motivational Quotes","meaning":"Waiting to feel ready reverses the order; action is often what creates readiness.","instruction":"Do one physical or visible action that proves the project has started.","category":"Start & Momentum","tags":["momentum","start","readiness","action"],"source":"Original editorial"},
+{"id":"mq-004","quote":"The day changes when one important thing stops being theoretical.","author":"Motivational Quotes","meaning":"Turning an intention into a completed action changes your sense of control.","instruction":"Pick one priority and create a finished result, however small, before switching tasks.","category":"Start & Momentum","tags":["start","priority","execution","control"],"source":"Original editorial"},
+{"id":"mq-005","quote":"You can think your way around a task forever. Progress only begins when you touch the work.","author":"Motivational Quotes","meaning":"Overthinking feels productive because it avoids the risk of imperfect execution.","instruction":"Open the file, make the call, put on the shoes, or take the first concrete action now.","category":"Start & Momentum","tags":["action","overthinking","start","execution"],"source":"Original editorial"},
+{"id":"mq-006","quote":"A beginning does not have to be impressive to be real.","author":"Motivational Quotes","meaning":"Small starts count because progress is measured by movement, not appearance.","instruction":"Complete the least glamorous first step you have been avoiding.","category":"Start & Momentum","tags":["start","progress","humility","momentum"],"source":"Original editorial"},
+{"id":"mq-007","quote":"Do not wait for the whole path to become obvious. Make the next metre useful.","author":"Motivational Quotes","meaning":"Large goals become manageable when attention stays on the next controllable step.","instruction":"Write down the single next action and ignore the steps that come after it for now.","category":"Start & Momentum","tags":["start","clarity","next-step","goals"],"source":"Original editorial"},
+{"id":"mq-008","quote":"Starting late still beats planning to start someday.","author":"Motivational Quotes","meaning":"Delay only becomes permanent when you keep giving it another future date.","instruction":"Give the goal ten focused minutes today, even if the ideal schedule has already been missed.","category":"Start & Momentum","tags":["start","delay","time","momentum"],"source":"Original editorial"},
+{"id":"mq-009","quote":"The task gets lighter the moment you stop carrying it only in your mind.","author":"Motivational Quotes","meaning":"Unstarted work creates mental weight that action begins to release.","instruction":"Move one pending task from your head into a completed first step.","category":"Start & Momentum","tags":["start","mental-load","action","relief"],"source":"Original editorial"},
+{"id":"mq-010","quote":"If the first version embarrasses you a little, it is probably real enough to improve.","author":"Motivational Quotes","meaning":"Early work is allowed to be rough; improvement requires something concrete to improve.","instruction":"Produce a deliberately simple first draft without editing while you create it.","category":"Start & Momentum","tags":["start","imperfection","draft","progress"],"source":"Original editorial"},
+{"id":"mq-011","quote":"Your next chapter does not need permission from your previous one.","author":"Motivational Quotes","meaning":"Past delays and mistakes do not prevent a new decision from becoming meaningful now.","instruction":"Choose one action today that fits the person you want to become next.","category":"Start & Momentum","tags":["start","identity","change","action"],"source":"Original editorial"},
+{"id":"mq-012","quote":"Five focused minutes can defeat five hours of avoidance.","author":"Motivational Quotes","meaning":"A short burst of genuine work can break the emotional barrier around a delayed task.","instruction":"Set a five-minute timer and work only on the task you have been resisting.","category":"Start & Momentum","tags":["start","focus","procrastination","timer"],"source":"Original editorial"},
+{"id":"mq-013","quote":"Discipline is keeping a promise after the mood that made it has disappeared.","author":"Motivational Quotes","meaning":"Consistency matters most on the ordinary days when enthusiasm is absent.","instruction":"Keep one small commitment today specifically because you do not feel like doing it.","category":"Discipline & Consistency","tags":["discipline","consistency","commitment","habits"],"source":"Original editorial"},
+{"id":"mq-014","quote":"A routine becomes powerful when it survives a boring day.","author":"Motivational Quotes","meaning":"Results compound when behaviour is stable enough to continue without excitement.","instruction":"Complete your minimum version of one important habit before the day ends.","category":"Discipline & Consistency","tags":["discipline","routine","consistency","habits"],"source":"Original editorial"},
+{"id":"mq-015","quote":"You do not rise to your intentions every day. You fall back on what you have made automatic.","author":"Motivational Quotes","meaning":"Reliable systems reduce the number of decisions that depend on motivation.","instruction":"Choose one recurring task and give it a fixed time or trigger.","category":"Discipline & Consistency","tags":["discipline","systems","habits","routine"],"source":"Original editorial"},
+{"id":"mq-016","quote":"Consistency looks unimpressive until the results become impossible to ignore.","author":"Motivational Quotes","meaning":"Repeated small actions often stay invisible before their accumulated effect becomes obvious.","instruction":"Repeat one useful action today without changing the plan because progress feels slow.","category":"Discipline & Consistency","tags":["consistency","patience","results","discipline"],"source":"Original editorial"},
+{"id":"mq-017","quote":"The standard you keep when nobody is watching becomes the standard you can trust.","author":"Motivational Quotes","meaning":"Private behaviour builds confidence because it proves your commitments are real.","instruction":"Finish one promised task without announcing it or seeking recognition.","category":"Discipline & Consistency","tags":["discipline","integrity","standards","self-trust"],"source":"Original editorial"},
+{"id":"mq-018","quote":"Make the right action easier to repeat than the excuse.","author":"Motivational Quotes","meaning":"Environment design can reduce friction and make consistency more likely.","instruction":"Prepare tomorrow's first good decision tonight by setting out what you need.","category":"Discipline & Consistency","tags":["discipline","environment","habits","friction"],"source":"Original editorial"},
+{"id":"mq-019","quote":"A missed day is an event. Two missed days can become a new pattern.","author":"Motivational Quotes","meaning":"Recovery speed matters more than maintaining a flawless streak.","instruction":"If you skipped a habit recently, complete the smallest version of it today.","category":"Discipline & Consistency","tags":["discipline","recovery","habits","consistency"],"source":"Original editorial"},
+{"id":"mq-020","quote":"Your future does not need heroic days. It needs enough dependable ones.","author":"Motivational Quotes","meaning":"Sustainable effort usually beats occasional bursts that cannot be maintained.","instruction":"Choose a pace you could repeat for a month and work at that pace today.","category":"Discipline & Consistency","tags":["discipline","sustainable","consistency","pace"],"source":"Original editorial"},
+{"id":"mq-021","quote":"Rules you make for yourself only matter when convenience argues back.","author":"Motivational Quotes","meaning":"Personal standards are tested when breaking them would be easy.","instruction":"Identify one boundary you set for yourself and keep it through today's easiest excuse.","category":"Discipline & Consistency","tags":["discipline","standards","boundaries","commitment"],"source":"Original editorial"},
+{"id":"mq-022","quote":"Do the useful thing before negotiating with yourself about it.","author":"Motivational Quotes","meaning":"Long internal debates often give avoidance time to manufacture better excuses.","instruction":"When your next planned habit arrives, start within ten seconds of noticing it.","category":"Discipline & Consistency","tags":["discipline","action","habits","decisions"],"source":"Original editorial"},
+{"id":"mq-023","quote":"Progress loves repetition more than intensity.","author":"Motivational Quotes","meaning":"A moderate action repeated often produces more dependable growth than rare extremes.","instruction":"Reduce one overambitious habit to a version you can execute consistently.","category":"Discipline & Consistency","tags":["discipline","repetition","consistency","progress"],"source":"Original editorial"},
+{"id":"mq-024","quote":"The strongest routine is the one you can still perform on a difficult week.","author":"Motivational Quotes","meaning":"Resilient systems include a minimum standard that survives low-energy periods.","instruction":"Define the smallest acceptable version of one routine and use it today if needed.","category":"Discipline & Consistency","tags":["discipline","routine","minimum","resilience"],"source":"Original editorial"},
+{"id":"mq-025","quote":"Confidence grows from evidence. Give yourself something to point to.","author":"Motivational Quotes","meaning":"Self-belief becomes stronger when it is supported by actions you have actually completed.","instruction":"Finish one task today that lets you say, 'I handled that.'","category":"Confidence & Courage","tags":["confidence","evidence","action","self-belief"],"source":"Original editorial"},
+{"id":"mq-026","quote":"You are allowed to be inexperienced and still be serious.","author":"Motivational Quotes","meaning":"Being new at something does not make your effort less legitimate.","instruction":"Take one beginner-level action without apologising for being at the beginning.","category":"Confidence & Courage","tags":["confidence","beginner","learning","courage"],"source":"Original editorial"},
+{"id":"mq-027","quote":"Courage is often quiet: one honest sentence, one attempt, one refusal to hide.","author":"Motivational Quotes","meaning":"Brave action does not need drama; it only needs movement toward what matters despite discomfort.","instruction":"Say or do one thing today that you have been avoiding because it feels exposed.","category":"Confidence & Courage","tags":["confidence","courage","honesty","action"],"source":"Original editorial"},
+{"id":"mq-028","quote":"Stop asking whether you look ready. Ask whether you are willing to learn in public.","author":"Motivational Quotes","meaning":"Growth accelerates when you stop protecting the image of competence.","instruction":"Attempt one task before you feel fully prepared and note what the attempt teaches you.","category":"Confidence & Courage","tags":["confidence","learning","imperfection","courage"],"source":"Original editorial"},
+{"id":"mq-029","quote":"Your doubt is an opinion, not a verdict.","author":"Motivational Quotes","meaning":"A negative prediction about yourself is still only a prediction until reality tests it.","instruction":"Choose one doubtful thought and run a small real-world experiment against it.","category":"Confidence & Courage","tags":["confidence","doubt","mindset","experiment"],"source":"Original editorial"},
+{"id":"mq-030","quote":"You do not need to feel fearless to behave like someone who trusts themselves.","author":"Motivational Quotes","meaning":"Confidence can be practised through decisions before it is experienced as a feeling.","instruction":"Make one clear decision today without repeatedly reopening it.","category":"Confidence & Courage","tags":["confidence","self-trust","decisions","courage"],"source":"Original editorial"},
+{"id":"mq-031","quote":"Comparison steals context before it steals confidence.","author":"Motivational Quotes","meaning":"You usually see other people's visible results without seeing their timing, advantages, failures, or costs.","instruction":"Measure one area of progress only against where you were three months ago.","category":"Confidence & Courage","tags":["confidence","comparison","progress","perspective"],"source":"Original editorial"},
+{"id":"mq-032","quote":"A mistake can describe a moment without defining the person who made it.","author":"Motivational Quotes","meaning":"Separating behaviour from identity makes correction easier and shame less useful.","instruction":"Name one mistake plainly, write the lesson, and choose the next behaviour.","category":"Confidence & Courage","tags":["confidence","mistakes","identity","growth"],"source":"Original editorial"},
+{"id":"mq-033","quote":"Speak to yourself like someone whose performance you are responsible for improving.","author":"Motivational Quotes","meaning":"Useful self-talk is neither cruel nor indulgent; it is specific, accurate, and constructive.","instruction":"Replace one insult you use on yourself with a precise coaching instruction.","category":"Confidence & Courage","tags":["confidence","self-talk","coaching","growth"],"source":"Original editorial"},
+{"id":"mq-034","quote":"Competence is built in rooms where you once felt out of place.","author":"Motivational Quotes","meaning":"Discomfort often marks the boundary between what you already know and what you are learning.","instruction":"Stay with one challenging situation long enough to learn something instead of escaping early.","category":"Confidence & Courage","tags":["confidence","competence","learning","discomfort"],"source":"Original editorial"},
+{"id":"mq-035","quote":"You can be uncertain about the outcome and certain about your effort.","author":"Motivational Quotes","meaning":"Outcome confidence is fragile; confidence in your preparation and response is more controllable.","instruction":"Choose one result you cannot control and define the effort you can control today.","category":"Confidence & Courage","tags":["confidence","control","effort","courage"],"source":"Original editorial"},
+{"id":"mq-036","quote":"The version of you that feels capable is built by the version that keeps showing up unsure.","author":"Motivational Quotes","meaning":"Confidence is often the result of repeated participation, not a prerequisite for it.","instruction":"Show up for one important task today before your confidence catches up.","category":"Confidence & Courage","tags":["confidence","show-up","consistency","self-belief"],"source":"Original editorial"},
+{"id":"mq-037","quote":"A setback can change the route without cancelling the destination.","author":"Motivational Quotes","meaning":"Plans can fail while the underlying goal remains worth pursuing.","instruction":"Rewrite the next step around what changed instead of abandoning the goal.","category":"Resilience & Recovery","tags":["resilience","setback","adaptation","goals"],"source":"Original editorial"},
+{"id":"mq-038","quote":"Recovery is progress too.","author":"Motivational Quotes","meaning":"Restoring your ability to continue is part of productive effort, not separate from it.","instruction":"Take one deliberate recovery action today that makes tomorrow's effort more likely.","category":"Resilience & Recovery","tags":["resilience","recovery","rest","progress"],"source":"Original editorial"},
+{"id":"mq-039","quote":"You do not have to win the day. Sometimes you only have to stop it from taking tomorrow.","author":"Motivational Quotes","meaning":"On difficult days, protecting your next opportunity can be a meaningful success.","instruction":"Do the minimum that preserves tomorrow: prepare, rest, reset, or ask for help.","category":"Resilience & Recovery","tags":["resilience","hard-days","recovery","tomorrow"],"source":"Original editorial"},
+{"id":"mq-040","quote":"The lesson is useful only after you stop using it as a weapon against yourself.","author":"Motivational Quotes","meaning":"Reflection should improve future behaviour rather than extend punishment for a past mistake.","instruction":"Write one lesson from a failure without adding any judgment about your worth.","category":"Resilience & Recovery","tags":["resilience","failure","learning","self-talk"],"source":"Original editorial"},
+{"id":"mq-041","quote":"Strong people change tactics before they abandon what matters.","author":"Motivational Quotes","meaning":"Adaptability protects important goals from rigid plans that no longer fit reality.","instruction":"Identify one approach that is not working and replace the method, not the goal.","category":"Resilience & Recovery","tags":["resilience","adaptation","strategy","goals"],"source":"Original editorial"},
+{"id":"mq-042","quote":"A hard season is a chapter with bad weather, not a permanent climate.","author":"Motivational Quotes","meaning":"Current conditions feel more permanent when you are inside them than they often prove to be.","instruction":"Name one thing that is difficult now and one thing that is still changeable.","category":"Resilience & Recovery","tags":["resilience","perspective","hard-times","hope"],"source":"Original editorial"},
+{"id":"mq-043","quote":"Your pace can slow without your direction changing.","author":"Motivational Quotes","meaning":"Reduced capacity does not require abandoning progress; it may require a smaller step.","instruction":"Cut today's target in half if necessary, but keep one movement in the right direction.","category":"Resilience & Recovery","tags":["resilience","pace","progress","adaptation"],"source":"Original editorial"},
+{"id":"mq-044","quote":"Resilience is not pretending it did not hurt. It is deciding the hurt does not get every decision.","author":"Motivational Quotes","meaning":"Acknowledging pain and retaining agency can exist at the same time.","instruction":"Give the difficulty a name, then make one decision based on your values rather than the pain.","category":"Resilience & Recovery","tags":["resilience","agency","difficulty","values"],"source":"Original editorial"},
+{"id":"mq-045","quote":"Sometimes the strongest move is to rebuild the basics before chasing the breakthrough.","author":"Motivational Quotes","meaning":"Sleep, order, food, movement, and simple routines can restore capacity for harder work.","instruction":"Repair one neglected basic today before demanding peak performance from yourself.","category":"Resilience & Recovery","tags":["resilience","basics","recovery","capacity"],"source":"Original editorial"},
+{"id":"mq-046","quote":"You have survived days that once looked too large from the morning.","author":"Motivational Quotes","meaning":"Past endurance is evidence that today's prediction of failure may be incomplete.","instruction":"Recall one difficult period you moved through and write what actually helped.","category":"Resilience & Recovery","tags":["resilience","evidence","perspective","strength"],"source":"Original editorial"},
+{"id":"mq-047","quote":"A failed attempt is data with bruised feelings attached.","author":"Motivational Quotes","meaning":"When emotion settles, unsuccessful action can reveal what to adjust next.","instruction":"Separate one recent failure into what worked, what failed, and what you will change.","category":"Resilience & Recovery","tags":["resilience","failure","data","learning"],"source":"Original editorial"},
+{"id":"mq-048","quote":"Do not confuse needing a reset with needing to quit.","author":"Motivational Quotes","meaning":"Exhaustion can make permanent decisions look attractive when a temporary recovery is what is needed.","instruction":"Delay one major quitting decision until after a deliberate recovery period and a fresh review.","category":"Resilience & Recovery","tags":["resilience","reset","recovery","decisions"],"source":"Original editorial"},
+{"id":"mq-049","quote":"If everything is a priority, your attention has no instructions.","author":"Motivational Quotes","meaning":"Focus improves when one task is clearly allowed to matter more than the others.","instruction":"Choose today's single most important outcome and put it first on a blank page.","category":"Focus & Clarity","tags":["focus","priority","clarity","attention"],"source":"Original editorial"},
+{"id":"mq-050","quote":"Attention is expensive. Stop spending it on problems you are not solving today.","author":"Motivational Quotes","meaning":"Mental bandwidth is wasted when you repeatedly revisit issues with no current action.","instruction":"Write down one concern you cannot act on today and schedule when you will revisit it.","category":"Focus & Clarity","tags":["focus","attention","worry","clarity"],"source":"Original editorial"},
+{"id":"mq-051","quote":"Clarity often arrives after you remove choices, not after you add more information.","author":"Motivational Quotes","meaning":"Too many options can keep you evaluating instead of committing.","instruction":"Reduce one decision to the two options that genuinely matter and choose between them.","category":"Focus & Clarity","tags":["focus","clarity","decisions","simplicity"],"source":"Original editorial"},
+{"id":"mq-052","quote":"Your phone does not need to know every time you try to think.","author":"Motivational Quotes","meaning":"Interruptions train attention to expect novelty instead of staying with difficult work.","instruction":"Put your phone out of reach for one uninterrupted twenty-five-minute work block.","category":"Focus & Clarity","tags":["focus","distraction","attention","deep-work"],"source":"Original editorial"},
+{"id":"mq-053","quote":"The next important thing deserves more attention than the next interesting thing.","author":"Motivational Quotes","meaning":"Novelty can pull you away from work that matters but feels less stimulating.","instruction":"Finish one important task before opening a new tab, app, or side project.","category":"Focus & Clarity","tags":["focus","priority","distraction","execution"],"source":"Original editorial"},
+{"id":"mq-054","quote":"Busy is a description of movement, not proof of progress.","author":"Motivational Quotes","meaning":"Activity becomes valuable when it is connected to a meaningful outcome.","instruction":"Look at today's tasks and remove one that creates motion without moving a priority.","category":"Focus & Clarity","tags":["focus","busy","progress","priority"],"source":"Original editorial"},
+{"id":"mq-055","quote":"Protect the hour that protects the goal.","author":"Motivational Quotes","meaning":"Important work becomes more reliable when it has reserved time rather than leftover time.","instruction":"Block one uninterrupted hour this week for the goal you keep saying matters.","category":"Focus & Clarity","tags":["focus","time","deep-work","goals"],"source":"Original editorial"},
+{"id":"mq-056","quote":"A clear no can protect a more important yes.","author":"Motivational Quotes","meaning":"Focus requires refusing commitments that compete with higher-value priorities.","instruction":"Decline or postpone one low-value commitment that is crowding out something important.","category":"Focus & Clarity","tags":["focus","boundaries","priority","clarity"],"source":"Original editorial"},
+{"id":"mq-057","quote":"Finish lines create focus better than vague intentions.","author":"Motivational Quotes","meaning":"Specific definitions of done reduce drift and make it easier to recognise progress.","instruction":"Define exactly what 'done' means for your current task before continuing it.","category":"Focus & Clarity","tags":["focus","execution","clarity","completion"],"source":"Original editorial"},
+{"id":"mq-058","quote":"You cannot concentrate on six futures at once.","author":"Motivational Quotes","meaning":"Too many simultaneous goals divide effort and weaken feedback from each one.","instruction":"Choose one goal to lead for the next thirty days and make the others maintenance-only.","category":"Focus & Clarity","tags":["focus","goals","priority","attention"],"source":"Original editorial"},
+{"id":"mq-059","quote":"Make space before you ask for concentration.","author":"Motivational Quotes","meaning":"Physical and digital clutter create extra cues that compete for attention.","instruction":"Clear your immediate workspace and close unrelated windows before your next work block.","category":"Focus & Clarity","tags":["focus","environment","distraction","clarity"],"source":"Original editorial"},
+{"id":"mq-060","quote":"Focus is returning, not never wandering.","author":"Motivational Quotes","meaning":"Attention will drift; the useful skill is noticing and coming back without turning it into a drama.","instruction":"When you notice distraction today, return to the task immediately without judging the lapse.","category":"Focus & Clarity","tags":["focus","attention","mindfulness","return"],"source":"Original editorial"},
+{"id":"mq-061","quote":"A goal gets stronger when you can explain who benefits if you keep going.","author":"Motivational Quotes","meaning":"Purpose becomes more durable when the outcome connects to people or values beyond a number.","instruction":"Write one sentence explaining who is helped by your current goal and how.","category":"Purpose & Direction","tags":["purpose","meaning","goals","values"],"source":"Original editorial"},
+{"id":"mq-062","quote":"Do not build a life that only looks successful from across the room.","author":"Motivational Quotes","meaning":"External signals of success can hide a life that does not fit your own values.","instruction":"Choose one goal and ask whether you would still want it if nobody could see the result.","category":"Purpose & Direction","tags":["purpose","values","success","direction"],"source":"Original editorial"},
+{"id":"mq-063","quote":"Direction matters more than speed when speed is taking you somewhere you do not want to live.","author":"Motivational Quotes","meaning":"Fast progress is not useful if the destination conflicts with what you value.","instruction":"Review one major commitment and confirm that its destination still fits your priorities.","category":"Purpose & Direction","tags":["purpose","direction","values","progress"],"source":"Original editorial"},
+{"id":"mq-064","quote":"The work becomes easier to carry when the reason is heavier than the inconvenience.","author":"Motivational Quotes","meaning":"A meaningful reason can make discomfort feel like a cost you consciously chose.","instruction":"Write the reason behind one hard commitment where you will see it before the next difficult session.","category":"Purpose & Direction","tags":["purpose","meaning","commitment","motivation"],"source":"Original editorial"},
+{"id":"mq-065","quote":"Your calendar eventually reveals what your priorities really are.","author":"Motivational Quotes","meaning":"Values become operational when time is consistently allocated to them.","instruction":"Compare your stated top priority with this week's calendar and correct one mismatch.","category":"Purpose & Direction","tags":["purpose","time","priorities","values"],"source":"Original editorial"},
+{"id":"mq-066","quote":"A meaningful life is built from repeated ordinary decisions, not occasional dramatic ones.","author":"Motivational Quotes","meaning":"Purpose is expressed through everyday behaviour more often than major turning points.","instruction":"Make one ordinary choice today that reflects the kind of life you say you want.","category":"Purpose & Direction","tags":["purpose","meaning","daily-life","values"],"source":"Original editorial"},
+{"id":"mq-067","quote":"You do not need one grand purpose. You need enough reasons to keep choosing well.","author":"Motivational Quotes","meaning":"Meaning can come from several relationships, responsibilities, crafts, and commitments rather than one perfect mission.","instruction":"List three things that currently make effort worthwhile and choose one to invest in today.","category":"Purpose & Direction","tags":["purpose","meaning","direction","life"],"source":"Original editorial"},
+{"id":"mq-068","quote":"A goal should cost effort, not your entire identity.","author":"Motivational Quotes","meaning":"Ambition becomes unhealthy when one outcome is allowed to determine all self-worth.","instruction":"Name one valuable part of your life that exists independently of your biggest goal.","category":"Purpose & Direction","tags":["purpose","identity","goals","balance"],"source":"Original editorial"},
+{"id":"mq-069","quote":"Ask what you want your effort to stand for, not only what you want it to produce.","author":"Motivational Quotes","meaning":"The character expressed through the process can matter as much as the external result.","instruction":"Choose one quality you want today's work to demonstrate and practise it deliberately.","category":"Purpose & Direction","tags":["purpose","character","values","work"],"source":"Original editorial"},
+{"id":"mq-070","quote":"The right direction often feels quieter than the impressive one.","author":"Motivational Quotes","meaning":"Decisions aligned with your values may attract less attention while creating more internal stability.","instruction":"Compare one flashy option with one meaningful option and judge them by long-term fit.","category":"Purpose & Direction","tags":["purpose","direction","values","decisions"],"source":"Original editorial"},
+{"id":"mq-071","quote":"If the goal no longer matters, changing it can be an act of honesty rather than failure.","author":"Motivational Quotes","meaning":"Persistence is useful only when the destination still deserves the cost.","instruction":"Review one long-running goal and decide whether to recommit, redesign, or release it.","category":"Purpose & Direction","tags":["purpose","goals","honesty","direction"],"source":"Original editorial"},
+{"id":"mq-072","quote":"Leave evidence of what mattered to you in the way you spent today.","author":"Motivational Quotes","meaning":"Purpose becomes visible through behaviour, not through the values you claim in theory.","instruction":"Before bed, complete one action you would be proud to count as evidence of your priorities.","category":"Purpose & Direction","tags":["purpose","values","action","meaning"],"source":"Original editorial"}
 ]

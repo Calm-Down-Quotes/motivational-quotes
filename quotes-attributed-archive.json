@@ -1,0 +1,322 @@
+[
+  {
+    "quote": "The future depends on what you do today.",
+    "author": "Mahatma Gandhi",
+    "meaning": "Tomorrow’s results are built from the choices you make right now, not from vague intentions.",
+    "instruction": "Pick one small action today that moves you closer to the life you want and do it before the day ends.",
+    "category": "Motivation & Action",
+    "tags": ["gandhi", "action", "future", "focus"]
+  },
+  {
+    "quote": "It always seems impossible until it's done.",
+    "author": "Nelson Mandela",
+    "meaning": "Big goals look unachievable from the starting line, but they shrink as you move toward them.",
+    "instruction": "Break one intimidating goal into the next tiny step and complete only that step today.",
+    "category": "Resilience & Grit",
+    "tags": ["mandela", "persistence", "courage", "goals"]
+  },
+  {
+    "quote": "Our greatest glory is not in never falling, but in rising every time we fall.",
+    "author": "Confucius",
+    "meaning": "Failure is not the end; your willingness to get back up is what defines your strength.",
+    "instruction": "Think of one setback you still carry and decide one way you can stand back up from it today.",
+    "category": "Resilience & Grit",
+    "tags": ["confucius", "failure", "growth", "strength"]
+  },
+  {
+    "quote": "The man who moves a mountain begins by carrying away small stones.",
+    "author": "Confucius",
+    "meaning": "Massive change is just the accumulation of many small, consistent efforts.",
+    "instruction": "Choose one tiny task that feels almost too small and complete it as a vote for your future self.",
+    "category": "Discipline & Habits",
+    "tags": ["confucius", "habits", "progress", "patience"]
+  },
+  {
+    "quote": "You have power over your mind—not outside events. Realize this, and you will find strength.",
+    "author": "Marcus Aurelius",
+    "meaning": "You can’t control everything that happens, but you can control how you interpret and respond to it.",
+    "instruction": "When something bothers you today, pause and ask: \"What part of this is actually under my control?\"",
+    "category": "Strength & Control",
+    "tags": ["marcus aurelius", "stoic", "control", "mindset"]
+  },
+  {
+    "quote": "Waste no more time arguing what a good man should be. Be one.",
+    "author": "Marcus Aurelius",
+    "meaning": "Instead of debating ideals, live them through your behaviour in each moment.",
+    "instruction": "Pick one quality you respect in others and deliberately practice it in one situation today.",
+    "category": "Character & Integrity",
+    "tags": ["marcus aurelius", "character", "action", "values"]
+  },
+  {
+    "quote": "If it is not right, do not do it; if it is not true, do not say it.",
+    "author": "Marcus Aurelius",
+    "meaning": "A strong life is built by filtering your actions and words through simple, firm principles.",
+    "instruction": "Before you act or speak today, run it through: \"Is it right? Is it true?\" and adjust if needed.",
+    "category": "Character & Integrity",
+    "tags": ["marcus aurelius", "ethics", "discipline", "truth"]
+  },
+  {
+    "quote": "Luck is what happens when preparation meets opportunity.",
+    "author": "Seneca",
+    "meaning": "What looks like \"good luck\" is often the result of quiet work done long before a chance appears.",
+    "instruction": "Invest thirty focused minutes today into a skill or project that could pay off later.",
+    "category": "Preparation & Opportunity",
+    "tags": ["seneca", "luck", "preparation", "work"]
+  },
+  {
+    "quote": "Begin at once to live, and count each separate day as a separate life.",
+    "author": "Seneca",
+    "meaning": "Every day is a fresh, complete chance to live intentionally instead of waiting for the future.",
+    "instruction": "Treat today as a whole lifetime: decide how you want this ‘life’ to feel and act accordingly.",
+    "category": "Presence & Purpose",
+    "tags": ["seneca", "time", "present", "intentional"]
+  },
+  {
+    "quote": "First say to yourself what you would be; and then do what you have to do.",
+    "author": "Epictetus",
+    "meaning": "Clarity about who you want to become has to come before consistent action.",
+    "instruction": "Write one sentence that finishes the phrase: \"I am the kind of person who…\" and take one action that matches it.",
+    "category": "Identity & Direction",
+    "tags": ["epictetus", "identity", "goals", "clarity"]
+  },
+  {
+    "quote": "No great thing is created suddenly.",
+    "author": "Epictetus",
+    "meaning": "Meaningful achievements are slow builds, not instant wins.",
+    "instruction": "Choose one long-term project and give it at least fifteen minutes of focused effort today.",
+    "category": "Patience & Process",
+    "tags": ["epictetus", "progress", "patience", "grit"]
+  },
+  {
+    "quote": "What you get by achieving your goals is not as important as what you become by achieving them.",
+    "author": "Zig Ziglar",
+    "meaning": "Goals are vehicles for growth; the real reward is the person you shape yourself into along the way.",
+    "instruction": "Look at one goal and note how it is forcing you to grow, not just what it will give you.",
+    "category": "Growth Mindset",
+    "tags": ["ziglar", "goals", "growth", "mindset"]
+  },
+  {
+    "quote": "Whether you think you can or you think you can’t, you’re right.",
+    "author": "Henry Ford",
+    "meaning": "Your beliefs quietly shape your effort, which then shapes your results.",
+    "instruction": "Catch one limiting thought today and deliberately replace it with a more useful one.",
+    "category": "Self-Belief",
+    "tags": ["ford", "belief", "mindset", "confidence"]
+  },
+  {
+    "quote": "Do what you can, with what you have, where you are.",
+    "author": "Theodore Roosevelt",
+    "meaning": "Waiting for perfect conditions keeps you stuck; progress starts from your real situation, not your ideal one.",
+    "instruction": "Identify one area where you’ve been waiting and take one imperfect action with what you already have.",
+    "category": "Motivation & Action",
+    "tags": ["roosevelt", "action", "imperfect", "start"]
+  },
+  {
+    "quote": "In the middle of difficulty lies opportunity.",
+    "author": "Albert Einstein",
+    "meaning": "Challenges often highlight the exact skills, connections, or insights you need to grow.",
+    "instruction": "Take one current problem and list one potential advantage or lesson hidden inside it.",
+    "category": "Perspective & Mindset",
+    "tags": ["einstein", "opportunity", "problems", "growth"]
+  },
+  {
+    "quote": "Courage is not the absence of fear, but the triumph over it.",
+    "author": "Nelson Mandela",
+    "meaning": "Bravery is feeling fear and choosing to move anyway, not waiting until fear disappears.",
+    "instruction": "Notice one thing you’re avoiding out of fear and take one small step toward it.",
+    "category": "Courage & Fear",
+    "tags": ["mandela", "courage", "fear", "bravery"]
+  },
+  {
+    "quote": "You miss 100% of the shots you don't take.",
+    "author": "Wayne Gretzky",
+    "meaning": "Avoiding risk guarantees no result; trying at least opens the door to success.",
+    "instruction": "Take one \"shot\" today—send the message, apply, ask, or try—without overthinking the outcome.",
+    "category": "Risk & Opportunity",
+    "tags": ["gretzky", "risk", "chance", "try"]
+  },
+  {
+    "quote": "Act as if what you do makes a difference. It does.",
+    "author": "William James",
+    "meaning": "Your daily choices ripple outward more than you realize; your effort is not meaningless.",
+    "instruction": "Choose one small action today that improves life for someone else, even slightly.",
+    "category": "Purpose & Impact",
+    "tags": ["william james", "impact", "meaning", "service"]
+  },
+  {
+    "quote": "The only way to do great work is to love what you do.",
+    "author": "Steve Jobs",
+    "meaning": "Sustained excellence comes from genuine interest and care, not just discipline.",
+    "instruction": "Notice one part of your current work you actually enjoy and lean into it with more attention.",
+    "category": "Work & Passion",
+    "tags": ["jobs", "work", "passion", "craft"]
+  },
+  {
+    "quote": "Success is the sum of small efforts, repeated day in and day out.",
+    "author": "Robert Collier",
+    "meaning": "Consistency multiplies; even modest effort compounds into significant progress over time.",
+    "instruction": "Choose one ten-minute habit and commit to doing it every day this week.",
+    "category": "Discipline & Habits",
+    "tags": ["collier", "consistency", "habits", "success"]
+  },
+  {
+    "quote": "What lies behind us and what lies before us are tiny matters compared to what lies within us.",
+    "author": "Ralph Waldo Emerson",
+    "meaning": "Your inner resources—character, courage, imagination—matter more than your past or circumstances.",
+    "instruction": "Write down three inner strengths you’ve already proven you have and keep them visible today.",
+    "category": "Self-Belief",
+    "tags": ["emerson", "strength", "inner", "mindset"]
+  },
+  {
+    "quote": "Go confidently in the direction of your dreams. Live the life you have imagined.",
+    "author": "Henry David Thoreau",
+    "meaning": "Your dreams require decisive movement toward them, not hesitant circling around them.",
+    "instruction": "Take one concrete, visible step toward a dream you’ve been keeping only in your head.",
+    "category": "Dreams & Direction",
+    "tags": ["thoreau", "dreams", "courage", "action"]
+  },
+  {
+    "quote": "Fortune favours the bold.",
+    "author": "Virgil",
+    "meaning": "Life often rewards those willing to act decisively instead of staying safe on the sidelines.",
+    "instruction": "Choose one area where you’ve been timid and make a bolder decision than usual today.",
+    "category": "Courage & Risk",
+    "tags": ["virgil", "boldness", "risk", "fortune"]
+  },
+  {
+    "quote": "Well done is better than well said.",
+    "author": "Benjamin Franklin",
+    "meaning": "Talk is cheap; actions carry more weight than promises or opinions.",
+    "instruction": "Pick one thing you’ve been talking about and take a concrete action toward it in silence.",
+    "category": "Action Over Words",
+    "tags": ["franklin", "action", "integrity", "follow-through"]
+  },
+  {
+    "quote": "Energy and persistence conquer all things.",
+    "author": "Benjamin Franklin",
+    "meaning": "Sustained effort combined with enthusiasm eventually breaks through obstacles.",
+    "instruction": "Choose one task you’ve been dragging and attack it with a set time block of focused, energetic work.",
+    "category": "Resilience & Grit",
+    "tags": ["franklin", "persistence", "energy", "grit"]
+  },
+  {
+    "quote": "If you are going through hell, keep going.",
+    "author": "Winston Churchill",
+    "meaning": "When life is painful, stopping in place keeps you stuck in the worst part; forward motion is the way out.",
+    "instruction": "If today feels heavy, commit to just the next right step instead of the whole journey.",
+    "category": "Hard Times",
+    "tags": ["churchill", "perseverance", "struggle", "hope"]
+  },
+  {
+    "quote": "I am not afraid of storms, for I am learning how to sail my ship.",
+    "author": "Louisa May Alcott",
+    "meaning": "Challenges are training, not punishment; they teach you how to handle more in the future.",
+    "instruction": "Reframe one current difficulty as practice for a stronger version of you.",
+    "category": "Learning & Growth",
+    "tags": ["alcott", "learning", "storms", "growth"]
+  },
+  {
+    "quote": "Fall seven times and stand up eight.",
+    "author": "Japanese Proverb",
+    "meaning": "Resilience is simply standing up one more time than you fall down.",
+    "instruction": "Think of one thing you’ve quit on and decide what \"standing up\" again would look like today.",
+    "category": "Resilience & Grit",
+    "tags": ["proverb", "japanese", "resilience", "persistence"]
+  },
+  {
+    "quote": "A journey of a thousand miles begins with a single step.",
+    "author": "Lao Tzu",
+    "meaning": "Every long path starts with one small, sometimes unimpressive move.",
+    "instruction": "Take the smallest possible first step toward a big goal you’ve been delaying.",
+    "category": "Starting & Momentum",
+    "tags": ["lao tzu", "journey", "start", "momentum"]
+  },
+  {
+    "quote": "When you are going through difficult times, remember that diamonds are made under pressure.",
+    "author": "Unknown",
+    "meaning": "Pressure can refine you, strengthening qualities that would never grow in comfort.",
+    "instruction": "Ask yourself: \"What strength is this pressure trying to pull out of me?\" and act in line with that.",
+    "category": "Hard Times",
+    "tags": ["unknown", "pressure", "strength", "refinement"]
+  },
+  {
+    "quote": "What we fear doing most is usually what we most need to do.",
+    "author": "Tim Ferriss",
+    "meaning": "Avoided actions often point straight at your next level of growth.",
+    "instruction": "Write down the one task you fear most and take a small but real step toward it today.",
+    "category": "Courage & Fear",
+    "tags": ["ferriss", "fear", "growth", "action"]
+  },
+  {
+    "quote": "You are never too old to set another goal or to dream a new dream.",
+    "author": "C. S. Lewis",
+    "meaning": "Age does not cancel your capacity to aim at something meaningful.",
+    "instruction": "Allow yourself to write down one new goal, even if it feels late to start.",
+    "category": "Lifelong Growth",
+    "tags": ["cs lewis", "age", "goals", "dreams"]
+  },
+  {
+    "quote": "The best way out is always through.",
+    "author": "Robert Frost",
+    "meaning": "Trying to escape discomfort often prolongs it; facing it directly shortens the path.",
+    "instruction": "Choose one uncomfortable situation and deal with it honestly instead of dodging it.",
+    "category": "Courage & Responsibility",
+    "tags": ["frost", "courage", "problems", "resolve"]
+  },
+  {
+    "quote": "Discipline is the bridge between goals and accomplishment.",
+    "author": "Jim Rohn",
+    "meaning": "Desire alone doesn’t create results; consistent behaviour is the connecting structure.",
+    "instruction": "Identify one daily discipline that would move a key goal forward and start it today.",
+    "category": "Discipline & Habits",
+    "tags": ["rohn", "discipline", "habits", "goals"]
+  },
+  {
+    "quote": "You are stronger than you believe. You have greater powers than you know.",
+    "author": "Antoine de Saint-Exupéry",
+    "meaning": "You usually underestimate your capacity because you only measure it against your comfort zone.",
+    "instruction": "Do one thing today that is just beyond what you normally think you can handle.",
+    "category": "Self-Belief",
+    "tags": ["saint-exupéry", "strength", "belief", "potential"]
+  },
+  {
+    "quote": "Nothing will work unless you do.",
+    "author": "Maya Angelou",
+    "meaning": "Plans, tools, and ideas only matter if you bring effort and follow-through.",
+    "instruction": "Choose one area where you’ve been waiting for a \"sign\" and instead apply focused work.",
+    "category": "Motivation & Action",
+    "tags": ["angelou", "work", "effort", "ownership"]
+  },
+  {
+    "quote": "If you can dream it, you can do it.",
+    "author": "Walt Disney",
+    "meaning": "Imagining a future is the first sign that it might be possible for you to build it.",
+    "instruction": "Take one dream you’ve kept private and sketch out the first three steps toward it.",
+    "category": "Dreams & Direction",
+    "tags": ["disney", "dreams", "possibility", "vision"]
+  },
+  {
+    "quote": "Success is not final, failure is not fatal: it is the courage to continue that counts.",
+    "author": "Winston Churchill",
+    "meaning": "Neither wins nor losses define you; what matters most is your willingness to keep going.",
+    "instruction": "Whatever your last result was—good or bad—decide the next action instead of resting on it.",
+    "category": "Resilience & Grit",
+    "tags": ["churchill", "success", "failure", "continue"]
+  },
+  {
+    "quote": "The secret of getting ahead is getting started.",
+    "author": "Mark Twain",
+    "meaning": "Overthinking the whole task often delays you more than the work itself.",
+    "instruction": "Start a task you’ve been postponing and commit to just five focused minutes.",
+    "category": "Starting & Momentum",
+    "tags": ["twain", "start", "procrastination", "momentum"]
+  },
+  {
+    "quote": "Action is the foundational key to all success.",
+    "author": "Pablo Picasso",
+    "meaning": "Ideas only become real when you convert them into movement.",
+    "instruction": "For one idea you like, stop planning and take a concrete step that proves you’re serious.",
+    "category": "Motivation & Action",
+    "tags": ["picasso", "action", "success", "movement"]
+  }
+]
