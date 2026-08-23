@@ -1,150 +1,215 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en-AU">
 <head>
-  <!-- ========================================================
-       CORE META
-  ========================================================= -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-
-  <title>Motivational Quotes – Daily Motivation Engine</title>
-  <link rel="canonical" href="https://calm-down-quotes.github.io/motivational-quotes/">
-
-  <!-- SEO -->
-  <meta name="description" content="A focused space for powerful motivational quotes, deeper meanings, and clear action steps to move forward with purpose.">
-  <meta name="author" content="Calm Down Quotes">
-  <meta name="robots" content="index,follow">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <title>Motivational Quotes — Turn Motivation Into Action</title>
+  <meta name="description" content="Motivational quotes with clear meaning and practical action steps. Find the right words for discipline, focus, confidence, resilience and momentum.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="Motivational Quotes">
+  <meta name="theme-color" content="#f3c56f">
   <meta name="referrer" content="strict-origin-when-cross-origin">
-  <meta name="theme-color" content="#0b1120">
-  <meta name="color-scheme" content="light">
+  <meta name="application-name" content="Motivational Quotes">
+  <link rel="canonical" href="https://calm-down-quotes.github.io/motivational-quotes/">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
 
-  <!-- Open Graph -->
-  <meta property="og:title" content="Motivational Quotes – Daily Motivation Engine">
-  <meta property="og:description" content="Spark action with motivating quotes, deeper meanings, and practical steps.">
   <meta property="og:type" content="website">
-  <meta property="og:site_name" content="Calm Down Quotes">
+  <meta property="og:site_name" content="Motivational Quotes">
+  <meta property="og:title" content="Motivational Quotes — Turn Motivation Into Action">
+  <meta property="og:description" content="One useful quote. One clear interpretation. One next move.">
   <meta property="og:url" content="https://calm-down-quotes.github.io/motivational-quotes/">
   <meta property="og:image" content="https://calm-down-quotes.github.io/preview-motivation.png">
-
-  <!-- Twitter -->
+  <meta property="og:image:alt" content="Motivational Quotes">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Motivational Quotes – Daily Motivation Engine">
-  <meta name="twitter:description" content="Powerful motivation with meaning and action.">
+  <meta name="twitter:title" content="Motivational Quotes — Turn Motivation Into Action">
+  <meta name="twitter:description" content="Find motivation for discipline, focus, confidence, resilience and momentum.">
   <meta name="twitter:image" content="https://calm-down-quotes.github.io/preview-motivation.png">
 
-  <!-- CSP -->
-  <meta http-equiv="Content-Security-Policy" content="
-    default-src 'self';
-    base-uri 'self';
-    object-src 'none';
-    frame-ancestors 'none';
-    img-src 'self' https: data:;
-    style-src 'self' 'unsafe-inline' https://fonts.googleapis.com;
-    font-src 'self' https://fonts.gstatic.com;
-    script-src 'self' 'unsafe-inline'
-      https://www.googletagmanager.com
-      https://www.google-analytics.com
-      https://pagead2.googlesyndication.com;
-    connect-src 'self'
-      https://www.google-analytics.com
-      https://region1.google-analytics.com;
-    frame-src https://*.google.com https://*.googlesyndication.com;
-    upgrade-insecure-requests;
-  ">
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@600;700&display=swap" rel="stylesheet">
-
-  <!-- CSS -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data: blob:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; connect-src 'self' https://cloudflareinsights.com; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; manifest-src 'self'; upgrade-insecure-requests">
   <link rel="stylesheet" href="style.css">
 
-  <!-- Structured Data -->
   <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Motivational Quotes",
-    "url": "https://calm-down-quotes.github.io/motivational-quotes/",
-    "inLanguage": "en-AU",
-    "description": "A focused space for motivational quotes with meaning and action."
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"Motivational Quotes",
+    "url":"https://calm-down-quotes.github.io/motivational-quotes/",
+    "description":"Motivational quotes with clear meaning and practical action steps for discipline, focus, confidence, resilience and momentum.",
+    "inLanguage":"en-AU"
   }
   </script>
-
-  <!-- GA4 -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-K9P7Z4CKYG"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){ dataLayer.push(arguments); }
-    gtag("js", new Date());
-    gtag("config", "G-K9P7Z4CKYG", { anonymize_ip: true });
-  </script>
-
-  <!-- AdSense -->
-  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8271945337069886" crossorigin="anonymous"></script>
 </head>
-
-<body>
+<body class="theme-sunrise">
   <a class="skip-link" href="#main-content">Skip to main content</a>
+  <div class="backdrop" aria-hidden="true"></div>
 
-  <main id="main-content" class="container">
-    <div class="breathing-circle" aria-hidden="true"></div>
+  <header class="header">
+    <button class="brand" type="button" data-view="home" aria-label="Motivational Quotes home">
+      <span class="brand-mark" aria-hidden="true">↗</span>
+      <span>Motivational Quotes</span>
+    </button>
 
-    <header class="hero">
-      <h1>Motivational Quotes</h1>
-      <p class="subtitle">Get focused. Take action. Move forward.</p>
-    </header>
+    <button class="menu" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="main-nav">
+      <span aria-hidden="true">☰</span>
+    </button>
 
-    <section class="generator">
-      <button id="quote-btn" class="primary-btn" type="button" aria-controls="quote-box">
-        Give Me a Motivational Quote
-      </button>
-    </section>
+    <nav id="main-nav" aria-label="Main navigation">
+      <button type="button" data-view="home" class="active">Home</button>
+      <button type="button" data-view="focus">Choose focus</button>
+      <button type="button" data-view="saved">Saved <span id="saved-count">0</span></button>
+      <a href="guide.html">Guide</a>
+    </nav>
+  </header>
 
-    <section id="quote-box" class="quote-box hidden" aria-live="polite" aria-atomic="true">
-      <p id="quote-text" class="quote"></p>
-      <p id="quote-author" class="author"></p>
-
-      <h3 class="section-heading">Meaning</h3>
-      <p id="quote-meaning" class="meaning"></p>
-
-      <h3 class="section-heading">Action Step</h3>
-      <p id="quote-instruction" class="instruction"></p>
-
-      <h3 class="section-heading">Category</h3>
-      <p id="quote-category" class="category"></p>
-
-      <div class="copy-row">
-        <button id="copy-btn" class="copy-btn" type="button">Copy Quote</button>
-        <span id="copy-feedback" class="copy-feedback" role="status"></span>
+  <main id="main-content">
+    <section id="home" class="hero view active" aria-labelledby="home-title">
+      <div class="hero-kicker">
+        <span id="focus-label">Today's direction</span>
+        <span class="momentum-pill" id="momentum-pill" title="Actions completed on consecutive days">
+          <span aria-hidden="true">◆</span>
+          <span id="streak-count">0</span> day momentum
+        </span>
       </div>
 
-      <div class="share-buttons" role="group" aria-label="Share quote">
-        <button id="share-btn" class="share-btn primary-share" type="button">Share</button>
+      <h1 id="home-title" class="sr-only">Motivational Quotes</h1>
+
+      <article id="quote-wrap" class="quote-stage" aria-live="polite" aria-atomic="true">
+        <blockquote id="quote">You do not need a perfect plan. You need a useful next move.</blockquote>
+        <p id="author" class="author">Motivational Quotes</p>
+
+        <div class="insight-grid">
+          <section class="insight">
+            <p class="eyebrow">What it means</p>
+            <p id="meaning">Progress becomes easier when you stop asking for certainty and start asking what you can do next.</p>
+          </section>
+          <section class="insight action-insight">
+            <p class="eyebrow">Your next move</p>
+            <p id="instruction">Choose one task that takes less than ten minutes and finish it before you plan anything else.</p>
+            <button id="done-action" class="action-check" type="button">
+              <span aria-hidden="true">✓</span>
+              Mark today's action done
+            </button>
+          </section>
+        </div>
+
+        <div class="quote-meta">
+          <span id="category">Momentum</span>
+          <div id="tags" class="tag-list" aria-label="Quote tags"></div>
+        </div>
+      </article>
+
+      <div class="actions" aria-label="Quote actions">
+        <button id="another" class="primary" type="button">Another quote</button>
+        <button id="save" class="secondary" type="button">Save this one</button>
+        <button id="share" class="secondary" type="button">Share</button>
+      </div>
+
+      <button class="text-link" type="button" data-view="focus">What do you need from yourself today?</button>
+      <p class="keyboard-hint">Desktop: press <kbd>A</kbd> for another quote, <kbd>S</kbd> to save.</p>
+    </section>
+
+    <section id="focus" class="panel view" aria-labelledby="focus-title">
+      <p class="eyebrow">Choose your direction</p>
+      <h2 id="focus-title">What would help most right now?</h2>
+      <p class="intro">Pick the kind of motivation you need. You can change it whenever you want.</p>
+
+      <div id="focus-grid" class="focus-grid">
+        <button type="button" data-focus="start">
+          <span class="focus-symbol" aria-hidden="true">→</span>
+          <strong>Start moving</strong>
+          <small>When thinking has replaced doing.</small>
+        </button>
+        <button type="button" data-focus="discipline">
+          <span class="focus-symbol" aria-hidden="true">◇</span>
+          <strong>Build discipline</strong>
+          <small>When consistency matters more than mood.</small>
+        </button>
+        <button type="button" data-focus="confidence">
+          <span class="focus-symbol" aria-hidden="true">↑</span>
+          <strong>Reset confidence</strong>
+          <small>When self-doubt is getting too loud.</small>
+        </button>
+        <button type="button" data-focus="resilience">
+          <span class="focus-symbol" aria-hidden="true">↻</span>
+          <strong>Stay resilient</strong>
+          <small>When the setback is not the finish line.</small>
+        </button>
+        <button type="button" data-focus="focus">
+          <span class="focus-symbol" aria-hidden="true">◎</span>
+          <strong>Find focus</strong>
+          <small>When everything feels equally urgent.</small>
+        </button>
+        <button type="button" data-focus="purpose">
+          <span class="focus-symbol" aria-hidden="true">✦</span>
+          <strong>Remember why</strong>
+          <small>When the goal has lost its meaning.</small>
+        </button>
+      </div>
+
+      <button id="any-focus" class="text-link" type="button">Show me anything useful</button>
+    </section>
+
+    <section id="saved" class="panel view" aria-labelledby="saved-title">
+      <p class="eyebrow">Your collection</p>
+      <h2 id="saved-title">Keep the words worth returning to.</h2>
+      <p class="intro">Saved quotes stay only in this browser. No account is required.</p>
+      <div id="saved-list" class="saved-list"></div>
+      <button id="clear-saved" class="text-link danger-link" type="button" hidden>Clear saved quotes</button>
+    </section>
+
+    <section class="home-content" aria-labelledby="why-title">
+      <div>
+        <p class="eyebrow">More than a quote generator</p>
+        <h2 id="why-title">Motivation is useful when it changes what happens next.</h2>
+      </div>
+      <div class="home-copy">
+        <p>A good quote can interrupt a stale thought, but inspiration on its own is easy to lose. This site pairs each quote with a plain-English interpretation and a small action so the idea has somewhere to go.</p>
+        <p>Use it when you need to begin, rebuild momentum, sharpen your focus or remember why a difficult goal matters. If you want a deeper system, read the <a href="guide.html">practical motivation guide</a>.</p>
       </div>
     </section>
-
-    <section class="subscribe-section">
-      <h2>Get motivation twice a week</h2>
-      <p class="subscribe-text">Short, focused motivation delivered Mondays and Thursdays.</p>
-      <a class="subscribe-btn" href="https://calm-down-quotes.beehiiv.com" target="_blank" rel="noopener">
-        Subscribe
-      </a>
-    </section>
-
-    <section class="ad-wrapper" aria-label="Sponsored content"></section>
   </main>
 
+  <div class="themes" aria-label="Choose an atmosphere">
+    <span>Atmosphere</span>
+    <button type="button" data-theme="sunrise" aria-label="Sunrise atmosphere" title="Sunrise"></button>
+    <button type="button" data-theme="ember" aria-label="Ember atmosphere" title="Ember"></button>
+    <button type="button" data-theme="midnight" aria-label="Midnight atmosphere" title="Midnight"></button>
+  </div>
+
   <footer class="site-footer">
-    <nav class="footer-links" aria-label="Legal links">
-      <a href="../privacy.html">Privacy Policy</a>
-      <span>•</span>
-      <a href="../terms.html">Terms of Service</a>
+    <span>One useful thought. One next move.</span>
+    <nav aria-label="Footer navigation">
+      <a href="guide.html">Guide</a>
+      <a href="about.html">About</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
     </nav>
-    <p>© 2025 Calm Down Quotes. All rights reserved.</p>
   </footer>
+
+  <div id="share-layer" class="share-layer" hidden>
+    <section class="share-sheet" role="dialog" aria-modal="true" aria-labelledby="share-title">
+      <button id="close-share" class="close" type="button" aria-label="Close share dialog">×</button>
+      <p class="eyebrow">Pass it on</p>
+      <h2 id="share-title">Share this motivation</h2>
+      <p id="share-quote" class="share-quote"></p>
+      <div class="share-grid">
+        <button type="button" data-share="whatsapp"><span aria-hidden="true">WA</span>WhatsApp</button>
+        <button type="button" data-share="facebook"><span aria-hidden="true">f</span>Facebook</button>
+        <button type="button" data-share="x"><span aria-hidden="true">𝕏</span>X</button>
+        <button type="button" data-share="email"><span aria-hidden="true">✉</span>Email</button>
+      </div>
+      <button id="share-image" class="copy" type="button">Share as an image</button>
+      <button id="copy" class="copy secondary-copy" type="button">Copy quote and link</button>
+      <p id="share-status" class="share-note" role="status" aria-live="polite">On supported phones, image sharing opens your normal share menu.</p>
+    </section>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite" aria-atomic="true"></div>
+
+  <noscript>
+    <div class="noscript">This site works best with JavaScript enabled. You can still read the <a href="guide.html">practical motivation guide</a>.</div>
+  </noscript>
 
   <script src="script.js" defer></script>
 </body>

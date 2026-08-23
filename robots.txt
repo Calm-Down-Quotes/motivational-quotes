@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://calm-down-quotes.github.io/motivational-quotes/sitemap.xml
