@@ -400,15 +400,18 @@ kbd{
   .brand{font-size:19px}
   .brand-mark{width:31px;height:31px}
   .menu{display:grid;place-items:center}
-  .header nav{
+  .header:has(.menu) nav{
     display:none;position:absolute;top:76px;left:16px;right:16px;
     flex-direction:column;align-items:stretch;gap:0;padding:14px;
     border:1px solid var(--line);border-radius:24px;background:var(--surface-strong);
     backdrop-filter:blur(28px);box-shadow:var(--shadow);
   }
-  .header nav.open{display:flex}
-  .header nav button,.header nav a{padding:13px 10px;text-align:left}
-  .header nav button.active{border-bottom:0;background:rgba(255,255,255,.08);border-radius:12px}
+  .header:has(.menu) nav.open{display:flex}
+  .header:has(.menu) nav button,.header:has(.menu) nav a{padding:13px 10px;text-align:left}
+  .header:has(.menu) nav button.active{border-bottom:0;background:rgba(255,255,255,.08);border-radius:12px}
+  .header:not(:has(.menu)){flex-wrap:wrap;gap:8px}
+  .header:not(:has(.menu)) nav{width:100%;gap:18px}
+  .header:not(:has(.menu)) nav a{padding:4px 0;font-size:12px}
   .hero{
     width:calc(100% - 28px);min-height:calc(100svh - 92px);
     padding:42px 0 118px;
